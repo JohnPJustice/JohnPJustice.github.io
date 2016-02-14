@@ -1414,7 +1414,7 @@ a.bg-danger:focus {
 }
 .page-header {
   padding-bottom: 9.5px;
-  margin: 42px 0 21px;
+  margin: 30px 0 15px;
   border-bottom: 1px solid transparent;
 }
 ul,
@@ -6522,6 +6522,9 @@ button.close {
 }
 .pull-right {
   float: right !important;
+}
+.to-center{
+    align-self:center;
 }
 .pull-left {
   float: left !important;
