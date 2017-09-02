@@ -1,2 +1,4 @@
 # JohnPJustice.github.io
-Portfolio Website
+Basic Portfolio Website
+
+Enjoy!
