@@ -4509,7 +4509,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color:lightgray;
 }
 .navbar-default .navbar-brand {
-  color: lightgray;
+  color:lightgray;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
