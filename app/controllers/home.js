@@ -1,13 +1,25 @@
 ﻿(function(){
 
-    var APP = angular.module("APP", []);
+    var jpjapp = angular.module("JPJAPP", []);
 
-    APP.controller("homeController", function ($scope) {
+    jpjapp.controller("homeController", function ($scope) {
         $scope.name = "John Paul Justice";
         $scope.about = "Experience";
         $scope.contact = "Contact Me";
         $scope.projects = "Skill Stack";
         $scope.home = "Home";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

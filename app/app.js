@@ -1,4 +1,4 @@
 (function(){
-angular.module("APP", []);
+angular.module("JPJAPP", []);
 })();
 
