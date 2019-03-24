@@ -1,7 +1,6 @@
-﻿(function(){
+﻿(function () {
 
-    var jpjapp = angular.module("JPJAPP", []);
-
+    var jpjapp = angular.module("app", []);
     jpjapp.controller("homeController", function ($scope) {
         $scope.name = "John Paul Justice";
         $scope.about = "Experience";

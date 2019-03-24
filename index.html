@@ -1,14 +1,14 @@
 ﻿<!doctype html>
-<html ng-app="JPJAPP" ng-controller="homeController">
+<html ng-app="app" ng-controller="homeController">
 <head>
     <title>{{name}}</title>
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" />
-    <script src="app/jpjapp.js"></script>
+    <script src="app/app.js"></script>
     <script src="Scripts/angular.js"></script>
     <script src="Scripts/jquery-1.12.1.js"></script>
     <script src="app/controllers/home.js"></script>
-    
+    <script src="Scripts/angular-route.min.js"></script>
 </head>
 <body >
    
@@ -20,9 +20,9 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">{{home}}</a></li>
-            <li><a href="#">{{projects}}</a></li>
-            <li><a href="#">{{about}}</a></li>
-            <li><a href="#">{{contact}}</a></li>
+            <li><a href="#skillStack">{{projects}}</a></li>
+            <li><a href="#experience">{{about}}</a></li>
+            <li><a href="#contactMe">{{contact}}</a></li>
         </ul>
     </div>
 </nav>
