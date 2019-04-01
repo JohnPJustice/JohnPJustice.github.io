@@ -3,8 +3,11 @@
 
     mainApp.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-
-            .when('#skillstack', {
+            .when('/',{
+                templateUrl:'main.html',
+                controller:'homeController'
+            })
+            .when('/skillstack', {
                 templateUrl: 'skillStack-template.html',
                 controller: 'skillStackController'
             })
