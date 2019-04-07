@@ -2,7 +2,7 @@
 
     var jpjapp = angular.module("app", []);
     jpjapp.controller("mainController", function ($scope) {
-        $scope.name = "John Paul Justice";
+        $scope.navName = "John Paul Justice";
         $scope.navAbout = "Experience";
         $scope.navContact = "Contact Me";
         $scope.navProjects = "Skill Stack";
