@@ -8,7 +8,7 @@
         $scope.navProjects = "Skill Stack";
         $scope.navTitle = "Home";
         $scope.mainTitle = "Senior Software Engineer / Site Reliability Engineer"
-
+        $scope.mainSummary = "Senior Software Engineer with 8 years of experience in software development for government/healthcare industries. Highly skilled in troubleshooting, development operations, familiarity with the software development life cycle, continuous integration/continuous delivery, devops, software methodologies and use of best practices and adopted patterns."
 
  
 
