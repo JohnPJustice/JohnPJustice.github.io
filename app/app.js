@@ -12,7 +12,7 @@
                 controller: 'skillStackController'
             })
             .otherwise({
-                redirectTo: '/home'
+                redirectTo: '/'
             });
     });
 

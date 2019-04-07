@@ -7,11 +7,11 @@
         $scope.contact = "Contact Me";
         $scope.projects = "Skill Stack";
         $scope.home = "Home";
+        $scope.message = "Introduction Message"
 
 
 
-
-
+ 
 
 
 
