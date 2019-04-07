@@ -1,6 +1,4 @@
 (function () {
-    var mainApp = angular.module("app", []);
-
-   
+    var mainApp = angular.module("app", []);  
 });
 
