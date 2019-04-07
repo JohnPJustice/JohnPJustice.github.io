@@ -24,6 +24,14 @@
             width: 200px;
 
         }
+        .nautilusImg {
+            height: 180px;
+            background: url(../images/workHistory/Nautilus.png);
+            margin: 5px;
+            border: 1px solid #ccc;
+            width: 180px;
+
+        }
     </style>
 </head>
 </head>
@@ -61,10 +69,10 @@
             <div class="col-sm-4">
                 <h2>About Me</h2>
                 <h5>Photo of me:</h5>
-                <div class="meImg">Fake Image</div>
+                <div class="meImg"></div>
                 <p>{{mainSummary}}</p>
-                <h3>Some Links</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
+                <h3>{{mainContactMe}}</h3>
+                <p></p>
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" href="#linkedIn">Active</a>
@@ -82,13 +90,15 @@
                 <hr class="d-sm-none">
             </div>
             <div class="col-sm-8">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg"></div>
-                <p>{{mainSummary}}</p>
+                <h3>{{mainExperience}}</h3>
+                <h2>Nautilus Inc.</h2>
+                <h5>Senior Site Reliability Engineer / Software Engineer</h5>
+                <h6>August 2017 - Present</h6>
+                <div class="nautilusImg"></div>
+                <p>Primary tasks include automating business operations, standardizing source control utilizing GIT-flow, creating application pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments. Created cloudformation templates to support automations. Setup application monitoring(supporting a kubernetes cluster), synthetic testing(browser selenium scripting, api tests, browser tests, endpoint tests), logging, tooling automation, terraform templates, general task automation, and webhook integrations supporting proprietary applications and business operations.</p>
                 <br>
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
+                <h2>Capsa Healthcare</h2>
+                <h5>Senior Software Engineer</h5>
                 <div class="fakeimg">Fake Image</div>
                 <p>Some text..</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
