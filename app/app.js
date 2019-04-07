@@ -2,5 +2,5 @@
     var mainApp = angular.module("app", []);
 
    
-});
+})();
 
