@@ -12,17 +12,17 @@
         $scope.mainContactMe = "Professional Links";
         $scope.mainExperience = "Experience";
         $scope.nautilusName = "Nautilus Inc.";
-        $scope.nautilusPostition= "Senior Site Reliability Engineer / Software Engineer";
-        $scope.nautilusEmpTime = "August 2017 - Present";
-        $scope.nautilusSummary = "Primary tasks include automating business operations, standardizing source control utilizing GIT-flow, creating"+
-        "application pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments."+
-        "Created cloudformation templates to support automations. Setup application monitoring(supporting a kubernetes"+
-        "cluster), synthetic testing(browser selenium scripting, api tests, browser tests, endpoint tests), logging,"+
-        "tooling automation, terraform templates, general task automation, and webhook integrations supporting"+
-        "proprietary applications and business operations.";
+        $scope.nautilusPostition = "Senior Site Reliability Engineer / Software Engineer";
+        $scope.nautilusEmpTime = "August 2017 - Present"
+        $scope.nautilusSummary = "Primary tasks include automating business operations, standardizing source control utilizing GIT-flow, creating" +
+            "application pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments." +
+            "Created cloudformation templates to support automations. Setup application monitoring(supporting a kubernetes" +
+            "cluster), synthetic testing(browser selenium scripting, api tests, browser tests, endpoint tests), logging," +
+            "tooling automation, terraform templates, general task automation, and webhook integrations supporting" +
+            "proprietary applications and business operations."
 
 
- 
+
 
 
 
