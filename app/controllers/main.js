@@ -14,7 +14,7 @@
         $scope.mainExperience = "Experience";
         $scope.nautilusName = "Nautilus Inc.";
         $scope.nautilusPostition= "Senior Site Reliability Engineer / Software Engineer";
-        $scope.nautilusEmpTime = "August 2017 - Present";
+        $scope.nautilusEmpTime = "August 2018 - Present";
         $scope.nautilusSummary =  "Primary tasks include automating business operations, standardizing source control utilizing GIT-flow, creatingapplication pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments.Created cloudformation templates to support automations. Setup application monitoring(supporting a kubernetescluster), synthetic testing(browser selenium scripting, api tests, browser tests, endpoint tests), logging,tooling automation, terraform templates, general task automation, and webhook integrations supportingproprietary applications and business operations.";
         $scope.capsaName = "Capsa Healthcare";
         $scope.capsaTitle ="Senior Software Engineer";
