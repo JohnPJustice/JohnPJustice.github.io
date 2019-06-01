@@ -26,10 +26,8 @@
         $scope.engilityTitle = "Software Engineer";
         $scope.engilitySummary = "Utilized the following technologies at my tenure; C#, XMPP, Jabber client, ASP.NET MVC, Razor Webpages, JSON, WPF, WCF, MVVM pattern, MVC pattern, Entity Framework 4-4.5, Bootstrap, Created Plugin’s, JavaScript, JQuery, CSS, HTML, Icon Creation, Photoshop, VS2013, TFS, SQL, Blend, MSWord, MS PowerPoint, MS Visio, and Agile Methodology. Due to the security risk of the project I will not be able to explain exact roles, tasks performed, or capabilities created.";
         $scope.githubLink = "https://github.com/JohnPJustice";
-
-
  
-
+            
 
 
     })
