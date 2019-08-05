@@ -108,7 +108,7 @@
         title: {
           display: true,
           text: 'DevOps Skill Experience'
-        },        
+        },
       }
     });
     var codingChart = new Chart(document.getElementById("codingChart"), {
@@ -133,22 +133,27 @@
         },
         scales: {
           yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
+            ticks: {
+              beginAtZero: true
+            }
           }]
-      }
+        }
       }
     });
-    var methodChart = new Chart(document.getElementById("pie-chart2"), {
+    var methodChart = new Chart(document.getElementById("methodChart"), {
       type: 'bar',
       data: {
         labels: ["TFS", "GIT", "Agile", "Waterfall/Canban", "CICD", "Devops"],
         datasets: [{
-          label: "Years Experience",
-          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#ff3333"],
-          data: [9, 9, 7, 8, 7, 4]
-        }]
+          label: "Profession Years Experience",
+          backgroundColor: 'rgb(0,0,255)',
+          data: [9, 9, 7, 8, 7, 4],
+        }, {
+          label: "Personal Years Experience",
+          backgroundColor: 'rgb(255,0,0)',
+          data: [9, 9, 7, 8, 7, 4],
+        }
+        ]
       },
       options: {
         title: {
@@ -157,15 +162,15 @@
         },
         scales: {
           yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
+            ticks: {
+              beginAtZero: true
+            }
           }]
-      }
+        }
       }
     });
     var fullStackChart = new Chart(document.getElementById("fullStackChart"), {
-      type: 'bar',
+      type: 'polarArea',
       data: {
         labels: ["AngularJS", "NoSQL", "Relational databases", "Api", "Pattern Development", "Solution Architechure"],
         datasets: [{
@@ -179,13 +184,6 @@
           display: true,
           text: 'Full Stack Experience'
         },
-        scales: {
-          yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
-          }]
-      }
       }
     });
 
