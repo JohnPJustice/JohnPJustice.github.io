@@ -18,7 +18,7 @@
     $scope.capsaEmpTime = "Aug 2016 - Aug 2018";
     $scope.integraEmpTime = "Aug 2015 - Aug 2016";
     $scope.engilityEmpTime = "Aug 2014 - Aug 2015";
-    $scope.nautilusSummary = "Lead the DevOps Mindset among the teams, by creating project templates for applications in such languages as python, nodejs, dotnetcore and dotnet framework, as well as automating cloudformation code pipelines to speed up development and standardizing source control utilizing the GIT-ﬂow. Setup application monitoring(supporting a kubernetes cluster), synthetic testing(browser scripting using selenium scripting, api tests, browser tests, endpoint tests), logging, tooling automation and webhook integrations supporting proprietary applications and business operations primarily in an AWS infrastructure as code environment. Primary tasks include automating business operations, , creating application pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments.";
+    $scope.nautilusSummary = "Lead the DevOps Mindset among the teams, by creating project templates for applications in such languages as python, nodejs, dotnetcore and dotnet framework, as well as automating cloudformation code pipelines to speed up development and standardizing source control utilizing the GIT-ﬂow. Setup application monitoring(supporting a kubernetes cluster), synthetic testing(browser scripting using selenium scripting, api tests, browser tests, endpoint tests), logging, tooling automation and webhook integrations supporting proprietary applications and business operations primarily in an AWS infrastructure as code environment. Primary tasks include automating business operations, creating application pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments.";
     $scope.capsaName = "Capsa Healthcare";
     $scope.capsaTitle = "Senior Software Engineer";
     $scope.capsaSummary = "Research, design, and implement scalable applications for application software, firmware and software interface, application utilities, data configuration, data extraction/retrieval from the ground up. Rapidly prototype new capabilities. Migrated Azure Data server, cloud services, and web applications.";
@@ -34,58 +34,6 @@
     $scope.linkedInTitle = "LinkedIn";
     $scope.skillSet = "Skill Set";
     $scope.copyRight = "© 2019"
-    // var devopsChart = new Chart(document.getElementById("devops"), {
-    //     type: 'pie',
-    //     data: {
-    //       labels: ["Testing", "Monitoring", "Automation", "Logging", "Coding","Kubernetes"],
-    //       datasets: [{
-    //         label: "Years Experience",
-    //         backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#ff3333"],
-    //         data: [5,5,9,9,9,1]
-    //       }]
-    //     },
-    //     options: {
-    //       title: {
-    //         display: true,
-    //         text: 'DevOps Skill Set'
-    //       }
-    //     }
-    // });
-    // var codingChart = new Chart(document.getElementById("pie-chart1"), {
-    //     type: 'pie',
-    //     data: {
-    //       labels: ["C#", "Python", ".Net", "Azure", "AWS", "Linux"],
-    //       datasets: [{
-    //         label: "Years Experience",
-    //         backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850", "#ff3333"],
-    //         data: [9,7,9,5,5,3]
-    //       }]
-    //     },
-    //     options: {
-    //       title: {
-    //         display: true,
-    //         text: 'Professional Coding Languages'
-    //       }
-    //     }
-    // });
-    // var methodChart = new Chart(document.getElementById("pie-chart2"), {
-    //     type: 'pie',
-    //     data: {
-    //       labels: ["TFS", "GIT", "Agile", "Waterfall/Canban", "CICD", "Devops"],
-    //       datasets: [{
-    //         label: "Years Experience",
-    //         backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850", "#ff3333"],
-    //         data: [9,9,7,8,7,4]
-    //       }]
-    //     },
-    //     options: {
-    //       title: {
-    //         display: true,
-    //         text: 'Source control/Practiced Methodologies'
-    //       }
-    //     }
-    // });
-
     var devopsChart = new Chart(document.getElementById("devops"), {
       type: 'radar',
       data: {
