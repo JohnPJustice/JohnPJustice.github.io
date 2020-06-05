@@ -2,5 +2,5 @@
 #VS Code
 .vscode/
 
-.vs
+.vs/
 node_modules
