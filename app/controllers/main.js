@@ -14,11 +14,15 @@
     $scope.mainExperience = "Experience";
     $scope.nautilusName = "Nautilus Inc.";
     $scope.nautilusPostition = "Senior Site Reliability Engineer / Software Engineer";
-    $scope.nautilusEmpTime = "Aug 2018 - Present";
+    $scope.nautilusEmpTime = "Aug 2018 - Sept 2019";
+    $scope.jgName = "Jahnel Group";
+    $scope.jgPosition = "Senior Site Reliability Engineer / Software Engineer";
+    $scope.jgEmpTime = "Sept 2019 - Present";
     $scope.capsaEmpTime = "Aug 2016 - Aug 2018";
     $scope.integraEmpTime = "Aug 2015 - Aug 2016";
     $scope.engilityEmpTime = "Aug 2014 - Aug 2015";
     $scope.nautilusSummary = "Lead the DevOps Mindset among the teams, by creating project templates for applications in such languages as python, nodejs, dotnetcore and dotnet framework, as well as automating cloudformation code pipelines to speed up development and standardizing source control utilizing the GIT-ﬂow. Setup application monitoring(supporting a kubernetes cluster), synthetic testing(browser scripting using selenium scripting, api tests, browser tests, endpoint tests), logging, tooling automation and webhook integrations supporting proprietary applications and business operations primarily in an AWS infrastructure as code environment. Primary tasks include automating business operations, creating application pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments.";
+    $scope.jgSummary = "Created and maintained documentation for systems and processes for new and existing systems. Implemented, tested, deployed and monitored microservices providing the backend service to game studios. Performing continuous integration and delivery of new microservices, on-demand trouble shooting of large-scale deployment issues on Linux and windows systems. Contributed to the development and maintenance of automation tools used in the management of our infrastructure. Coordinated deployments with application owners to ensure smooth transitions and minimal user impact.";
     $scope.capsaName = "Capsa Healthcare";
     $scope.capsaTitle = "Senior Software Engineer";
     $scope.capsaSummary = "Research, design, and implement scalable applications for application software, firmware and software interface, application utilities, data configuration, data extraction/retrieval from the ground up. Rapidly prototype new capabilities. Migrated Azure Data server, cloud services, and web applications.";
@@ -33,7 +37,7 @@
     $scope.linkedInLink = "https://www.linkedin.com/in/john-paul-justice";
     $scope.linkedInTitle = "LinkedIn";
     $scope.skillSet = "Skill Set";
-    $scope.copyRight = "© 2019"
+    $scope.copyRight = "© 2020"
     var devopsChart = new Chart(document.getElementById("devops"), {
       type: 'radar',
       data: {

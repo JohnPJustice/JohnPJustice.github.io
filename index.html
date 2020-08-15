@@ -43,6 +43,17 @@
       border-left: 5px solid white;
       border-right: 5px solid white;
     }
+    .jgImp{
+      position: inherit;
+      left: 25%;
+      top: 25px;
+      height: 90px;
+      width: 90px;
+      background:transparent;
+      border-top:10px solid transparent;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+    }
   </style>
 </head>
 </head>
@@ -89,6 +100,18 @@
       </div>
       <div class="col-sm-8">
         <h2>{{mainExperience}}</h2>
+        <div class="col-sm-6">
+          <h3>{{jgName}}</h3>
+          <h5>{{jgPosition}}</h5>
+          <h6>{{jgEmpTime}}</h6>
+        </div>
+        <div class="col-sm-12 jgImp">
+          <img src="images/workHistory/jg.png">
+        </div>
+        <div class="col-sm-12">
+          <p>{{jgSummary}}</p>
+        </div>
+        <br>
         <div class="col-sm-6">
           <h3>{{nautilusName}}</h3>
           <h5>{{nautilusPostition}}</h5>
@@ -138,7 +161,6 @@
           <p>{{engilitySummary}}</p>
         </div>
       </div>
-    </div>
   </div>
 
   <br>
