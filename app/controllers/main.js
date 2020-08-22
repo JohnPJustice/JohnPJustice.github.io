@@ -8,15 +8,15 @@
     $scope.navTitle = "Home";
     $scope.aboutMe = "About Me";
     $scope.photoOfMe = "Photo of me:";
-    $scope.mainTitle = "Senior Software Engineer / Senior Site Reliability Engineer";
-    $scope.mainSummary = "Senior Software Engineer with 9 years of experience in software development for government/healthcare industries. Highly skilled in troubleshooting, development operations, familiarity with the software development life cycle, CICD, devops, software methodologies and use of best practices and adopted patterns.";
+    $scope.mainTitle = "Senior Software Engineer / Senior SRE";
+    $scope.mainSummary = "Senior Software Engineer with over a decade of experience in software development for government/healthcare industries. Highly skilled in troubleshooting, development operations, familiarity with the software development life cycle, CICD, devops, software methodologies and use of best practices and adopted patterns.";
     $scope.mainContactMe = "Professional Links";
     $scope.mainExperience = "Experience";
     $scope.nautilusName = "Nautilus Inc.";
-    $scope.nautilusPostition = "Senior Site Reliability Engineer / Software Engineer";
+    $scope.nautilusPostition = "Senior SRE /Senior Software Engineer";
     $scope.nautilusEmpTime = "Aug 2018 - Sept 2019";
     $scope.jgName = "Jahnel Group";
-    $scope.jgPosition = "Senior Site Reliability Engineer / Software Engineer";
+    $scope.jgPosition = "Senior SRE /Senior Software Engineer";
     $scope.jgEmpTime = "Sept 2019 - Present";
     $scope.capsaEmpTime = "Aug 2016 - Aug 2018";
     $scope.integraEmpTime = "Aug 2015 - Aug 2016";
@@ -37,7 +37,6 @@
     $scope.linkedInLink = "https://www.linkedin.com/in/john-paul-justice";
     $scope.linkedInTitle = "LinkedIn";
     $scope.skillSet = "Skill Set";
-    $scope.copyRight = "© 2020"
     var devopsChart = new Chart(document.getElementById("devops"), {
       type: 'radar',
       data: {
@@ -46,7 +45,7 @@
           label: "Professional Years Experience",
           backgroundColor: 'rgb(0,0,255,.1)',
           borderColor: "rgb(0,0,255)",
-          data: [1, 8, 5, 3, 8, 8, 8, 4, 6],
+          data: [1, 8, 5, 3, 9, 9, 9, 4, 6],
         },
         {
           label: "Personal Years Experience",
