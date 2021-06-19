@@ -10,7 +10,7 @@ html {
   font-family: Consolas, monaco, monospace;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-        background: #bbe8ed;
+        background: #a8a8aa;
      background-size: initial;
     background-repeat: no-repeat;
     
@@ -1094,7 +1094,7 @@ body {
   font-family: Nasalization, monaco, monospace;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #1C2247;
+  color: #2e2e2e;
   /* background-image: url("../images/prop-reactor.jpg"); */
   background-size: 20%;
   background-position: center;
@@ -4189,7 +4189,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border-bottom: 5px solid white;
   border-top: 5px solid white;
-  background-color:#477998;
+  background-color:#000000;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4982,7 +4982,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #F64740;
+  background-color: #5e5e5e;
 }
 .jumbotron h1,
 .jumbotron .h1 {

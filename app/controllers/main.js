@@ -8,8 +8,8 @@
     $scope.navTitle = "Home";
     $scope.aboutMe = "About Me";
     $scope.photoOfMe = "Photo of me:";
-    $scope.mainTitle = "Senior Software Engineer / Senior SRE";
-    $scope.mainSummary = "Senior Software Engineer with over a decade of experience in software development for government/healthcare industries. Highly skilled in troubleshooting, development operations, familiarity with the software development life cycle, CICD, devops, software methodologies and use of best practices and adopted patterns.";
+    $scope.mainTitle = "Senior Site Reliability Engineer / Senior Software Engineer";
+    $scope.mainSummary = "Senior Software Engineer with over a decade of experience of software development in the government, gaming, and healthcare industries. Highly skilled in troubleshooting, development operations, familiarity with the software development life cycle, CICD, devops, software methodologies and use of best practices and adopted patterns.";
     $scope.mainContactMe = "Professional Links";
     $scope.mainExperience = "Experience";
     $scope.nautilusName = "Nautilus Inc.";
@@ -43,15 +43,15 @@
         labels: ["Kubernetes", "Testing/Automated Test", "Monitoring", "Solutions Architech", "Automation", "Logging", "Coding", "Continuous Integration", "Scripting"],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'rgb(0,0,255,.1)',
-          borderColor: "rgb(0,0,255)",
+          backgroundColor: 'rgb(64,64,64,.1)',
+          borderColor: "rgb(64,64,64)",
           data: [1, 8, 5, 3, 9, 9, 9, 4, 6],
         },
         {
           label: "Personal Years Experience",
-          backgroundColor: 'rgb(255,0,0,.2)',
-          borderColor: "rgb(255,0,0)",
-          data: [0.5, 10, 6, 4, 10, 4, 10, 2, 10],
+          backgroundColor: 'rgb(88,88,88,.2)',
+          borderColor: "rgb(88,88,88)",
+          data: [0.5, 10, 6, 4, 10, 4, 10, 3, 10],
         }
         ]
       },
@@ -68,12 +68,12 @@
         labels: ["Python", "C#", ".Net", "Azure", "AWS", "Linux", "JavaScript",],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'rgb(0,0,255)',
-          data: [5, 9, 9, 4, 2, 2, 5]
+          backgroundColor: 'rgb(64, 64, 64)',
+          data: [5, 9, 9, 4, 4, 2, 5]
         },
         {
           label: "Personal Years Experience",
-          backgroundColor: "rgb(255,0,0)",
+          backgroundColor: "rgb(88, 88, 88)",
           data: [6, 11, 9, 3, 2, 2, 7]
         }]
       },
@@ -97,11 +97,11 @@
         labels: ["TFS", "GIT", "Agile", "Waterfall/Canban", "CICD", "Devops"],
         datasets: [{
           label: "Profession Years Experience",
-          backgroundColor: 'rgb(0,0,255)',
+          backgroundColor: 'rgb(64,64,64)',
           data: [9, 9, 7, 8, 7, 4],
         }, {
           label: "Personal Years Experience",
-          backgroundColor: 'rgb(255,0,0)',
+          backgroundColor: 'rgb(88,88,88)',
           data: [9, 9, 7, 8, 7, 4],
         }
         ]
@@ -137,10 +137,6 @@
         },
       }
     });
-
-
-
-
 
     devopsChart.render();
     codingChart.render();
