@@ -126,7 +126,7 @@
         labels: ["AngularJS", "NoSQL", "Relational databases", "Api", "Pattern Development", "Solution Architechure"],
         datasets: [{
           label: "Years Experience",
-          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#ff3333"],
+          backgroundColor: ["#404040", "#484848", "#505050", "#585858", "#606060", "#686868"],
           data: [4, 3, 8, 6, 6, 4]
         }]
       },
