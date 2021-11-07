@@ -57,13 +57,13 @@
           label: "Professional Years Experience",
           backgroundColor: 'rgb(64,64,64,.1)',
           borderColor: "rgb(64,64,64)",
-          data: [1, 8, 5, 3, 9, 9, 9, 4, 6],
+          data: [3, 10, 7, 5, 11, 11, 11, 6,8],
         },
         {
           label: "Personal Years Experience",
           backgroundColor: 'rgb(88,88,88,.2)',
           borderColor: "rgb(88,88,88)",
-          data: [0.5, 10, 6, 4, 10, 4, 10, 3, 10],
+          data: [1.5, 11, 7, 5, 11, 5, 11, 4, 11],
         }
         ]
       },
@@ -81,7 +81,7 @@
         datasets: [{
           label: "Professional Years Experience",
           backgroundColor: 'rgb(64, 64, 64)',
-          data: [5, 9, 9, 4, 4, 2, 5]
+          data: [7, 10, 11, 4, 4, 4, 5]
         },
         {
           label: "Personal Years Experience",
@@ -110,7 +110,7 @@
         datasets: [{
           label: "Profession Years Experience",
           backgroundColor: 'rgb(64,64,64)',
-          data: [9, 9, 7, 8, 7, 4],
+          data: [9, 11, 9, 11, 9, 4],
         }, {
           label: "Personal Years Experience",
           backgroundColor: 'rgb(88,88,88)',
@@ -139,7 +139,7 @@
         datasets: [{
           label: "Years Experience",
           backgroundColor: ["#404040", "#484848", "#505050", "#585858", "#606060", "#686868"],
-          data: [4, 3, 8, 6, 6, 4]
+          data: [4, 3, 8, 8, 8, 6]
         }]
       },
       options: {
