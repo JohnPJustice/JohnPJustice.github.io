@@ -1,46 +1,54 @@
 ﻿(function () {
   var jpjapp = angular.module("app", ["ngRoute"]);
   jpjapp.controller("mainController", function ($scope) {
-    // $.getJSON("http://johnpjustice.github.io/JohnPJustice/JohnPJustice.github.io/data.json", function(data){
-    //   console.log(data);
-    // });
+    var url = "https://johnpjustice.github.io/data.json";
+    var jsonInfo = {};
+    $.ajax({
+      url: url,
+      async: false,
+      dataType: 'json',
+      success: function (data) {
+        jsonInfo = data;
+      }
+    });
 
-    $scope.mainName = "John Paul Justice";
-    $scope.navAbout = "Experience";
-    $scope.navContact = "Contact Me";
-    $scope.navProjects = "Skill Stack";
-    $scope.navTitle = "Home";
-    $scope.aboutMe = "About Me";
-    $scope.photoOfMe = "Photo of me:";
-    $scope.mainTitle = "Senior Site Reliability Engineer / Senior Software Engineer";
-    $scope.mainSummary = "Senior Software Engineer with over a decade of experience of software development in the government, gaming, and healthcare industries. Highly skilled in troubleshooting, development operations, familiarity with the software development life cycle, CICD, devops, software methodologies and use of best practices and adopted patterns.";
-    $scope.mainContactMe = "Professional Links";
-    $scope.mainExperience = "Experience";
-    $scope.nautilusName = "Nautilus Inc.";
-    $scope.nautilusPostition = "Senior SRE /Senior Software Engineer";
-    $scope.nautilusEmpTime = "Aug 2018 - Sept 2019";
-    $scope.jgName = "Jahnel Group";
-    $scope.jgPosition = "Senior SRE /Senior Software Engineer";
-    $scope.jgEmpTime = "Sept 2019 - Present";
-    $scope.capsaEmpTime = "Aug 2016 - Aug 2018";
-    $scope.integraEmpTime = "Aug 2015 - Aug 2016";
-    $scope.engilityEmpTime = "Aug 2014 - Aug 2015";
-    $scope.nautilusSummary = "Lead the DevOps Mindset among the teams, by creating project templates for applications in such languages as python, nodejs, dotnetcore and dotnet framework, as well as automating cloudformation code pipelines to speed up development and standardizing source control utilizing the GIT-ﬂow. Setup application monitoring(supporting a kubernetes cluster), synthetic testing(browser scripting using selenium scripting, api tests, browser tests, endpoint tests), logging, tooling automation and webhook integrations supporting proprietary applications and business operations primarily in an AWS infrastructure as code environment. Primary tasks include automating business operations, creating application pipelines for EC2 instances(windows/linux), lambdas,and other various special deployments.";
-    $scope.jgSummary = "Created and maintained documentation for systems and processes for new and existing systems. Implemented, tested, deployed and monitored microservices providing the backend service to game studios. Performing continuous integration and delivery of new microservices, on-demand trouble shooting of large-scale deployment issues on Linux and windows systems. Contributed to the development and maintenance of automation tools used in the management of our infrastructure. Coordinated deployments with application owners to ensure smooth transitions and minimal user impact.";
-    $scope.capsaName = "Capsa Healthcare";
-    $scope.capsaTitle = "Senior Software Engineer";
-    $scope.capsaSummary = "Research, design, and implement scalable applications for application software, firmware and software interface, application utilities, data configuration, data extraction/retrieval from the ground up. Rapidly prototype new capabilities. Migrated Azure Data server, cloud services, and web applications.";
-    $scope.integraName = "Integra telecom";
-    $scope.integraTitle = "Software Engineer";
-    $scope.integraSummary = "Full stack system engineer responsible for completion of tasks from stories, bugs and other product backlog items/epics. Implemented Deployment builds with unit tests and locked check-ins. Redesigned Customer Website Portal with a focus on responsive web design for optimal mobile capability.";
-    $scope.engilityName = "Engility";
-    $scope.engilityTitle = "Software Engineer";
-    $scope.engilitySummary = "Utilized the following technologies at my tenure; C#, XMPP, Jabber client, ASP.NET MVC, Razor Webpages, JSON, WPF, WCF, MVVM pattern, MVC pattern, Entity Framework 4-4.5, Bootstrap, Created Plugin’s, JavaScript, JQuery, CSS, HTML, Icon Creation, Photoshop, VS2013, TFS, SQL, Blend, MSWord, MS PowerPoint, MS Visio, and Agile Methodology. Due to the security risk of the project I will not be able to explain exact roles, tasks performed, or capabilities created.";
-    $scope.githubLink = "https://github.com/JohnPJustice";
-    $scope.githubTitle = "GitHub";
-    $scope.linkedInLink = "https://www.linkedin.com/in/john-paul-justice";
-    $scope.linkedInTitle = "LinkedIn";
-    $scope.skillSet = "Skill Set";
+    $scope.mainName = jsonInfo.mainName;
+    $scope.navAbout = jsonInfo.navAbout;
+    $scope.navContact = jsonInfo.navContact;
+    $scope.navProjects = jsonInfo.navProjects;
+    $scope.navTitle = jsonInfo.navTitle;
+    $scope.aboutMe = jsonInfo.aboutMe;
+    $scope.photoOfMe = jsonInfo.photoOfMe;
+    $scope.mainTitle = jsonInfo.mainTitle;
+    $scope.mainSummary = jsonInfo.mainSummary;
+    $scope.mainContactMe = jsonInfo.mainContactMe;
+    $scope.mainExperience = jsonInfo.mainExperience;
+    $scope.nautilusName = jsonInfo.nautilusName;
+    $scope.nautilusPostition = jsonInfo.nautilusPostition;
+    $scope.nautilusEmpTime = jsonInfo.nautilusEmpTime;
+    $scope.jgName = jsonInfo.jgName;
+    $scope.jgPosition = jsonInfo.jgPosition;
+    $scope.jgEmpTime = jsonInfo.jgEmpTime;
+    $scope.capsaEmpTime = jsonInfo.capsaEmpTime;
+    $scope.integraEmpTime = jsonInfo.integraEmpTime;
+    $scope.engilityEmpTime = jsonInfo.engilityEmpTime;
+    $scope.nautilusSummary = jsonInfo.nautilusSummary;
+    $scope.jgSummary = jsonInfo.jgSummary;
+    $scope.capsaName = jsonInfo.capsaName;
+    $scope.capsaTitle = jsonInfo.capsaTitle;
+    $scope.capsaSummary = jsonInfo.capsaSummary;
+    $scope.integraName = jsonInfo.integraName;
+    $scope.integraTitle = jsonInfo.integraTitle;
+    $scope.integraSummary = jsonInfo.integraSummary;
+    $scope.engilityName = jsonInfo.engilityName;
+    $scope.engilityTitle = jsonInfo.engilityTitle;
+    $scope.engilitySummary = jsonInfo.engilitySummary;
+    $scope.githubLink = jsonInfo.githubLink;
+    $scope.githubTitle = jsonInfo.githubTitle;
+    $scope.linkedInLink = jsonInfo.linkedInLink;
+    $scope.linkedInTitle = jsonInfo.linkedInTitle;
+    $scope.skillSet = jsonInfo.skillSet;
+
     var devopsChart = new Chart(document.getElementById("devops"), {
       type: 'radar',
       data: {
