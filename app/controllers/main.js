@@ -1,6 +1,10 @@
 ﻿(function () {
   var jpjapp = angular.module("app", ["ngRoute"]);
   jpjapp.controller("mainController", function ($scope) {
+    // $.getJSON("http://johnpjustice.github.io/JohnPJustice/JohnPJustice.github.io/data.json", function(data){
+    //   console.log(data);
+    // });
+
     $scope.mainName = "John Paul Justice";
     $scope.navAbout = "Experience";
     $scope.navContact = "Contact Me";
