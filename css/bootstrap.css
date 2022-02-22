@@ -10,7 +10,8 @@ html {
   font-family: Consolas, monaco, monospace;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-        background: #dadada;
+      /* Text Background */
+        background: #F7F2E5;
      background-size: initial;
     background-repeat: no-repeat;
     
@@ -1091,7 +1092,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Nasalization, monaco, monospace;
+  font-family: sans-serif, monaco, monospace;
   font-size: 14px;
   line-height: 1.42857143;
   color: #2e2e2e;
@@ -1102,10 +1103,10 @@ body {
   background-attachment: fixed;
 }
 
-@font-face {
+/* @font-face {
   font-family: Nasalization;
   src: url(./fonts/Nasa.ttf);
-}
+} */
 button,
 select,
 textarea {
@@ -4186,7 +4187,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border-bottom: 5px solid white;
   border-top: 5px solid white;
-  background-color:#000000;
+  /* background color for the navbar */
+  background-color:#FAD06C;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4979,7 +4981,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #5e5e5e;
+  background-color: #F97350;
 }
 .jumbotron h1,
 .jumbotron .h1 {

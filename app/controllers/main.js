@@ -55,14 +55,14 @@
         labels: ["Kubernetes", "Testing/Automated Test", "Monitoring", "Solutions Architech", "Automation", "Logging", "Coding", "Continuous Integration", "Scripting"],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'rgb(64,64,64,.1)',
-          borderColor: "rgb(64,64,64)",
+          backgroundColor: 'rgb(250, 208, 108,.1)',
+          borderColor: "rgb(250, 208, 108)",
           data: [3, 10, 7, 5, 11, 11, 11, 6,8],
         },
         {
           label: "Personal Years Experience",
-          backgroundColor: 'rgb(88,88,88,.2)',
-          borderColor: "rgb(88,88,88)",
+          backgroundColor: 'rgb(249, 115, 80,.2)',
+          borderColor: "rgb(249, 115, 80)",
           data: [1.5, 11, 7, 5, 11, 5, 11, 4, 11],
         }
         ]
@@ -80,12 +80,12 @@
         labels: ["Python", "C#", ".Net", "Azure", "AWS", "Linux", "JavaScript",],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'rgb(64, 64, 64)',
+          backgroundColor: 'rgb(249, 115, 80)',
           data: [7, 10, 11, 4, 4, 4, 5]
         },
         {
           label: "Personal Years Experience",
-          backgroundColor: "rgb(88, 88, 88)",
+          backgroundColor: "rgb(250, 208, 108)",
           data: [6, 11, 9, 3, 2, 2, 7]
         }]
       },
@@ -109,11 +109,11 @@
         labels: ["TFS", "GIT", "Agile", "Waterfall/Canban", "CICD", "Devops"],
         datasets: [{
           label: "Profession Years Experience",
-          backgroundColor: 'rgb(64,64,64)',
+          backgroundColor: 'rgb(249, 115, 80)',
           data: [9, 11, 9, 11, 9, 4],
         }, {
           label: "Personal Years Experience",
-          backgroundColor: 'rgb(88,88,88)',
+          backgroundColor: 'rgb(250, 208, 108)',
           data: [9, 9, 7, 8, 7, 4],
         }
         ]
@@ -138,7 +138,7 @@
         labels: ["AngularJS", "NoSQL", "Relational databases", "Api", "Pattern Development", "Solution Architechure"],
         datasets: [{
           label: "Years Experience",
-          backgroundColor: ["#404040", "#484848", "#505050", "#585858", "#606060", "#686868"],
+          backgroundColor: ["#F97350", "#FAD06C", "#F97350", "#FAD06C", "#F97350", "#FAD06C"],
           data: [4, 3, 8, 8, 8, 6]
         }]
       },

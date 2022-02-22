@@ -43,6 +43,9 @@
       border-left: 5px solid white;
       border-right: 5px solid white;
     }
+    .jobDetail{
+      font-family: sans-serif;
+    }
 
     .jgImp {
       position: inherit;
@@ -70,7 +73,7 @@
     </button>
   </nav>
 
-  <div style="margin: 5px">
+  <div class="jobDetail" style="margin: 5px">
     <h2 align="center">{{skillSet}}</h2>
     <div class="col-sm-8 chart"><canvas id="devops"></canvas></div>
     <div class="col-sm-8 chart"><canvas id="codingChart"></canvas></div>
@@ -79,7 +82,7 @@
     <div class="col-sm-8 chart"><canvas id="fullStackChart"></canvas></div>
   </div>
 
-  <div class="container" style="margin-top:30px">
+  <div class="container jobDetail" style="margin-top:30px">
     <div class="row">
       <div class="col-sm-4">
         <h2>{{aboutMe}}</h2>
@@ -87,6 +90,7 @@
         <div class="portraitImg">
           <img src="images/jj.jpg">
         </div>
+        <br/>
         <p>{{mainSummary}}</p>
         <h3>{{mainContactMe}}</h3>
         <p></p>
