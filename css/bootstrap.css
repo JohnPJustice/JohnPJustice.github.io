@@ -4977,6 +4977,7 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
+  font-family: Nasalization;
   color: #FAFAFF;
   background-color: #0B1C51;
 }
