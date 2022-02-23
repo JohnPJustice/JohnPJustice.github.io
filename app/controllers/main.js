@@ -1,17 +1,18 @@
 ﻿(function () {
   var jpjapp = angular.module("app", ["ngRoute"]);
   jpjapp.controller("mainController", function ($scope) {
-    var url = "https://johnpjustice.github.io/data.json";
+    var url="https://johnpjustice.github.io/data.json";
     var jsonInfo = {};
     $.ajax({
       url: url,
       async: false,
       dataType: 'json',
+      type:"GET",
       success: function (data) {
         jsonInfo = data;
       }
     });
-
+    
     $scope.mainName = jsonInfo.mainName;
     $scope.navAbout = jsonInfo.navAbout;
     $scope.navContact = jsonInfo.navContact;
@@ -55,14 +56,14 @@
         labels: ["Kubernetes", "Testing/Automated Test", "Monitoring", "Solutions Architech", "Automation", "Logging", "Coding", "Continuous Integration", "Scripting"],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'rgb(250, 208, 108,.1)',
-          borderColor: "rgb(250, 208, 108)",
+          backgroundColor: 'rgb(102, 121, 182,.1)',
+          borderColor: "rgb(102, 121, 182)",
           data: [3, 10, 7, 5, 11, 11, 11, 6,8],
         },
         {
           label: "Personal Years Experience",
-          backgroundColor: 'rgb(249, 115, 80,.2)',
-          borderColor: "rgb(249, 115, 80)",
+          backgroundColor: "rgb(168, 176, 200,.2)",
+          borderColor: "rgb(168, 176, 200)",
           data: [1.5, 11, 7, 5, 11, 5, 11, 4, 11],
         }
         ]
@@ -80,12 +81,12 @@
         labels: ["Python", "C#", ".Net", "Azure", "AWS", "Linux", "JavaScript",],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'rgb(249, 115, 80)',
+          backgroundColor: 'rgb(102, 121, 182)',
           data: [7, 10, 11, 4, 4, 4, 5]
         },
         {
           label: "Personal Years Experience",
-          backgroundColor: "rgb(250, 208, 108)",
+          backgroundColor: "rgb(168, 176, 200)",
           data: [6, 11, 9, 3, 2, 2, 7]
         }]
       },
@@ -109,11 +110,11 @@
         labels: ["TFS", "GIT", "Agile", "Waterfall/Canban", "CICD", "Devops"],
         datasets: [{
           label: "Profession Years Experience",
-          backgroundColor: 'rgb(249, 115, 80)',
-          data: [9, 11, 9, 11, 9, 4],
+          backgroundColor: 'rgb(102, 121, 182)',
+          data: [9, 12, 10, 11, 9, 6],
         }, {
           label: "Personal Years Experience",
-          backgroundColor: 'rgb(250, 208, 108)',
+          backgroundColor: 'rgb(168, 176, 200)',
           data: [9, 9, 7, 8, 7, 4],
         }
         ]
@@ -138,8 +139,8 @@
         labels: ["AngularJS", "NoSQL", "Relational databases", "Api", "Pattern Development", "Solution Architechure"],
         datasets: [{
           label: "Years Experience",
-          backgroundColor: ["#F97350", "#FAD06C", "#F97350", "#FAD06C", "#F97350", "#FAD06C"],
-          data: [4, 3, 8, 8, 8, 6]
+          backgroundColor: ["#6679B6", "#A8B0C8", "#6679B6", "#A8B0C8", "#6679B6", "#A8B0C8"],
+          data: [4, 3, 8, 8, 8, 8]
         }]
       },
       options: {
