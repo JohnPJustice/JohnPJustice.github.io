@@ -14,7 +14,7 @@
     });
     
     $scope.mainName = angular.uppercase(jsonInfo.mainName);
-    $scope.mainName = jsonInfo.mainNameTitle;
+    $scope.mainNameTitle = jsonInfo.mainName;
     $scope.navAbout = jsonInfo.navAbout;
     $scope.navContact = jsonInfo.navContact;
     $scope.navProjects = jsonInfo.navProjects;
