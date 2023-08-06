@@ -52,20 +52,18 @@
     $scope.skillSet = jsonInfo.skillSet;
 
     var devopsChart = new Chart(document.getElementById("devops"), {
-      type: 'radar',
+      type: 'bar',
       data: {
-        labels: ["Kubernetes", "Testing/Automated Test", "Monitoring", "Solutions Architech", "Automation", "Logging", "Coding", "Continuous Integration", "Scripting"],
+        labels: ["Kubernetes", "Testing/Automated Test", "Monitoring/Logging", "Distributed Computing", "Automation/Tooling", "Databases", "Coding", "CICD", "Operation Systems"],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'rgb(102, 121, 182,.1)',
-          borderColor: "rgb(102, 121, 182)",
-          data: [3, 10, 7, 5, 11, 11, 11, 6,8],
+          backgroundColor:  "rgb(102, 121, 182)",
+          data: [4, 10, 7, 5, 9, 11, 11, 11, 8],
         },
         {
           label: "Personal Years Experience",
-          backgroundColor: "rgb(168, 176, 200,.2)",
-          borderColor: "rgb(168, 176, 200)",
-          data: [1.5, 11, 7, 5, 11, 5, 11, 4, 11],
+          backgroundColor:  "rgb(168, 176, 200)",
+          data: [5, 12, 7, 7, 11, 11, 11, 11, 11],
         }
         ]
       },
@@ -79,16 +77,16 @@
     var codingChart = new Chart(document.getElementById("codingChart"), {
       type: 'bar',
       data: {
-        labels: ["Python", "C#", ".Net", "Azure", "AWS", "Linux", "JavaScript",],
+        labels: ["Python", "C#", "Javascript", "Terraform", "Docker", "Pack", "GoLang",],
         datasets: [{
           label: "Professional Years Experience",
           backgroundColor: 'rgb(102, 121, 182)',
-          data: [7, 10, 11, 4, 4, 4, 5]
+          data: [7, 10, 8, 4, 6, 1, 4]
         },
         {
           label: "Personal Years Experience",
           backgroundColor: "rgb(168, 176, 200)",
-          data: [6, 11, 9, 3, 2, 2, 7]
+          data: [6, 11, 10, 3, 7, 3, 5]
         }]
       },
       options: {
@@ -108,22 +106,17 @@
     var methodChart = new Chart(document.getElementById("methodChart"), {
       type: 'bar',
       data: {
-        labels: ["TFS", "GIT", "Agile", "Waterfall/Canban", "CICD", "Devops"],
+        labels: ["Joint Application Development", "Feature Driven Development", "Agile", "Waterfall/Canban", "Rapid Development", "Devops", "Spiral"],
         datasets: [{
-          label: "Profession Years Experience",
+          label: "Professional Years Experience",
           backgroundColor: 'rgb(102, 121, 182)',
-          data: [9, 12, 10, 11, 9, 6],
-        }, {
-          label: "Personal Years Experience",
-          backgroundColor: 'rgb(168, 176, 200)',
-          data: [9, 9, 7, 8, 7, 4],
-        }
-        ]
+          data: [2, 3, 4, 1, 4, 2, 2],
+        }]
       },
       options: {
         title: {
           display: true,
-          text: 'Source control/Practiced Methodologies'
+          text: 'Practiced Methodologies'
         },
         scales: {
           yAxes: [{
@@ -135,13 +128,17 @@
       }
     });
     var fullStackChart = new Chart(document.getElementById("fullStackChart"), {
-      type: 'polarArea',
+      type: 'bar',
       data: {
-        labels: ["AngularJS", "NoSQL", "Relational databases", "Api", "Pattern Development", "Solution Architechure"],
+        labels: ["Front End", "Back End", "Datbase Management", "Verson Control", "Pattern Development", "Solution Architechure"],
         datasets: [{
-          label: "Years Experience",
-          backgroundColor: ["#6679B6", "#A8B0C8", "#6679B6", "#A8B0C8", "#6679B6", "#A8B0C8"],
-          data: [4, 3, 8, 8, 8, 8]
+          label: "Professional Years Experience",
+          backgroundColor: 'rgb(102, 121, 182)',
+          data: [9, 10, 10, 11, 10, 6],
+        }, {
+          label: "Personal Years Experience",
+          backgroundColor: 'rgb(168, 176, 200)',
+          data: [10, 11, 10, 11, 11, 7],
         }]
       },
       options: {
@@ -149,6 +146,13 @@
           display: true,
           text: 'Full Stack Experience'
         },
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
       }
     });
 
