@@ -110,7 +110,7 @@
         datasets: [{
           label: "Professional Years Experience",
           backgroundColor: 'rgb(102, 121, 182)',
-          data: [2, 3, 4, 1, 4, 2, 2],
+          data: [5, 5, 4, 8, 6, 8, 3],
         }]
       },
       options: {
