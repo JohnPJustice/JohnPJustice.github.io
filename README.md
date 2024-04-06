@@ -14,7 +14,7 @@ Simple Portfolio website using AngularJS
 Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md).
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Apache License](LICENSE).
 
 ## Contact
-For any questions or feedback, please reach out to me at john@example.com.
+For any questions or feedback...
