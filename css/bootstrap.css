@@ -9,7 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   /* Text Background */
-  background: #FAFAFF;
+  background: #c2dde4;
   background-size: initial;
   background-repeat: no-repeat;
 
@@ -5236,7 +5236,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   border-bottom: 5px solid white;
   border-top: 5px solid white;
   /* background color for the navbar. */
-  background-color: #A68E72;
+  background-color: #76101e;
 }
 
 @media (min-width: 768px) {
@@ -6188,8 +6188,8 @@ a.badge:focus {
 
 .jumbotron {
   font-family: Nasalization;
-  color: #FAFAFF;
-  background-color: #0B1C51;
+  color: #c2dde4;
+  background-color: #133769;
 }
 
 .jumbotron h1,
@@ -8315,4 +8315,48 @@ button.close {
   }
 }
 
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+.chart {
+  height: auto;
+  padding: 5px;
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portraitImg {
+  height: 200px;
+  /* width: 200px; */
+}
+
+.empImp {
+  position: inherit;
+  left: 25%;
+  top: 25px;
+  height: 60px;
+  width: 180px;
+}
+
+.jobDetail {
+  font-family: sans-serif;
+}
+
+.jgImp {
+  position: inherit;
+  left: 21%;
+  top: 25px;
+  height: 100px;
+  width: 240px;
+  background: transparent;
+  border-top: 10px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
 /*# sourceMappingURL=bootstrap.css.map */
