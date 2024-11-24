@@ -6,125 +6,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.css" rel="stylesheet" />
-  <script src="Scripts/angular.js"></script>
-  <script src="Scripts/jquery-1.12.1.js"></script>
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/jquery-1.12.1.js"></script>
   <script src="app/controllers/main.js"></script>
-  <script src="Scripts/angular-route.min.js"></script>
-  <script src="Scripts/charts.min.js"></script>
+  <script src="scripts/angular-route.min.js"></script>
+  <script src="scripts/charts.min.js"></script>
 </head>
+
 <body ng-controller="mainController">
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>{{mainName}}</h1>
-    <p style="font-family:sans-serif;">{{mainTitle}}</p>
-  </div>
-  <nav class="navbar">
-    <a class="navbar-brand" href="#"></a>
-    </button>
-  </nav>
-
-  <div class="jobDetail" style="margin-left: 100px; margin-right: 100px;">
-    <h2 align="center">{{skillSet}}</h2>
-    <div class="col-sm-2 chart"><canvas id="devops"></canvas></div>
-    <div class="col-sm-2 chart"><canvas id="codingChart"></canvas></div>
-
-    <div class="col-sm-2 chart"><canvas id="methodChart"></canvas></div>
-    <div class="col-sm-2 chart"><canvas id="fullStackChart"></canvas></div>
+  <div class='at-container'>
+    <div class='at-item'>{{mainName}}</div>
   </div>
 
-  <div class="container jobDetail" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-4">
-        <h2>{{aboutMe}}</h2>
-        <h5>{{photoOfMe}}</h5>
-        <div class="portraitImg">
-          <img src="images/jj.png" title="Portrait">
-        </div>
-        <br />
-        <p>{{mainSummary}}</p>
-        <h3>{{mainContactMe}}</h3>
-        <p></p>
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href={{githubLink}}>{{githubTitle}}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href={{linkedInLink}}>{{linkedInTitle}}</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-8">
+  <div class="at-common-container">
+    <div class="at-common-item">
+      <div>{{mainTitle}}</div>
+    </div>
+  </div>
+
+  <div class="at-experience-container">
+    <div class="at-experience-item">
+      <div class="main-experience">
         <h2>{{mainExperience}}</h2>
-        <div class="col-sm-6">
-          <h3>{{jgName}}</h3>
-          <h5>{{jgPosition}}</h5>
-          <h6>{{jgEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 jgImp">
-          <img src="images/workHistory/jg.png" title="Jahnel Group">
-        </div>
-        <div class="col-sm-12">
-          <p>{{jgSummary}}</p>
-        </div>
-        <br>
-        <div class="col-sm-6">
-          <h3>{{nautilusName}}</h3>
-          <h5>{{nautilusPostition}}</h5>
-          <h6>{{nautilusEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/nautilusBrandinc.png" title="Nautilus">
-        </div>
-        <div class="col-sm-12">
-          <p>{{nautilusSummary}}</p>
-        </div>
-        <br>
-        <div class="col-sm-6">
-          <h3>{{capsaName}}</h3>
-          <h5>{{capsaTitle}}</h5>
-          <h6>{{capsaEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/capsaBrand.png" title="Capsa Healthcare">
-        </div>
-        <div class="col-sm-12">
+      </div>
+      <div class="col-3-lg">
+        <button type="button" class="collapsible "><img class="emplogo" src="./images/workHistory/capsaBrand.png"
+            alt="Capsa"></button>
+        <div class="content">
+          <p>{{capsaTitle}}</p>
+          <p>{{capsaEmpTime}}</p>
           <p>{{capsaSummary}}</p>
         </div>
-
-        <br>
-        <div class="col-sm-6">
-          <h3>{{integraName}}</h3>
-          <h5>{{integraTitle}}</h5>
-          <h6>{{integraEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/Integra.png" title="Integra Telecom">
-        </div>
-        <div class="col-sm-12">
-          <p>{{integraSummary}}</p>
-        </div>
-        <br>
-        <div class="col-sm-6">
-          <h3>{{engilityName}}</h3>
-          <h5>{{engilityTitle}}</h5>
-          <h6>{{engilityEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/engilitybrand.png" title="Engility">
-        </div>
-        <div class="col-sm-12">
-          <p>{{engilitySummary}}</p>
-        </div>
       </div>
     </div>
+  </div>
 
-    <br>
-    <br>
-    <br>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-      <div align=center>&copy;
-        <script>document.write(" " + new Date().getFullYear());</script>
-      </div>
-    </div>
+
+  <div class="main"></div>
+  <div class="at-common-item">&copy;
+    <script>document.write(" " + new Date().getFullYear());</script>
+  </div>
 
 </body>
 
