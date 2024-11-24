@@ -11,8 +11,13 @@ div.at-common-container {
   height: 100%;
 }
 .at-common-item {
-  color: #d6dbe4; font-weight: normal; font-size: 14px; text-align: center; word-wrap: calc(100% - 8px);
+  color: #d6dbe4; 
+  font-weight: normal; 
+  font-size: 14px; 
+  text-align: center; 
+  word-wrap: calc(100% - 8px);
   
+
   animation-name: focus-in-contract;
   animation-duration: 3.5s;
   animation-timing-function: linear;
@@ -29,7 +34,6 @@ div.at-common-container {
   color: #fff;
 }
 div.at-experience-container {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -81,7 +85,11 @@ div.at-container {
 }
 
 .at-item {
-  color: #d6dbe4; font-weight:bold; font-size: 3em; text-align: center; word-wrap: calc(100% - 1em);
+  color: #d6dbe4; 
+  font-weight:bold; 
+  font-size: 3em; 
+  text-align: center; 
+  word-wrap: calc(100% - 1em);
   font-family: Nasalization;
   animation-name: focus-in-contract;
   animation-duration: 3s;
@@ -95,7 +103,7 @@ div.at-container {
 @keyframes focus-in-contract {
     
   0% {
-    letter-spacing:0.3em;
+    letter-spacing:0.1em;
     filter:blur(13px);
     opacity:0;
   }
@@ -109,8 +117,8 @@ div.at-container {
   position: inherit;
   left: 21%;
   top: 25px;
-  height: 25%;
-  width: 25%;
+  height: inherit;
+  width: inherit;
   background: transparent;
   border-top: 10px solid transparent;
   border-left: 5px solid transparent;
@@ -159,7 +167,7 @@ animation: zoom 30s forwards;
 }
 
 /* .active, .collapsible:hover {
-  background-color: #555;
+  background-color: lightseagreen;
 } */
 
 .content {
@@ -177,4 +185,27 @@ animation: zoom 30s forwards;
   padding: 20px;
   z-index: 1;
   width: 100%;
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
 }

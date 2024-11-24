@@ -2,9 +2,8 @@
 <html lang="en" ng-app="app">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>{{mainNameTitle}}</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.css" rel="stylesheet" />
   <script src="scripts/angular.js"></script>
   <script src="scripts/jquery-1.12.1.js"></script>
@@ -29,14 +28,65 @@
       <div class="main-experience">
         <h2>{{mainExperience}}</h2>
       </div>
-      <div class="col-3-lg">
-        <button type="button" class="collapsible "><img class="emplogo" src="./images/workHistory/capsaBrand.png"
-            alt="Capsa"></button>
-        <div class="content">
-          <p>{{capsaTitle}}</p>
-          <p>{{capsaEmpTime}}</p>
-          <p>{{capsaSummary}}</p>
+      <div class="row">
+        <div class="column3">
+          <button type="button" class="collapsible "><img class="emplogo" src="./images/workHistory/jg.png"
+              alt="JG"></button>
+          <div class="content">
+            <p>{{jgName}}</p>
+            <p>{{jgPosition}}</p>
+            <p>{{jgEmpTime}}</p>
+            <p>{{jgSummary}}</p>
+          </div>
         </div>
+
+        <div class="column3">
+          <button type="button" class="collapsible "><img class="emplogo"
+              src="./images/workHistory/nautilusBrandinc.png" alt="Nautilus"></button>
+          <div class="content">
+            <p>{{nautilusName}}</p>
+            <P>{{nautilusPostition}}</P>
+            <p>{{nautilusEmpTime}}</p>
+            <p>{{nautilusSummary}}</p>
+          </div>
+        </div>
+
+        <div class="column3">
+          <button type="button" class="collapsible "><img class="emplogo" src="./images/workHistory/capsaBrand.png"
+              alt="Capsa"></button>
+          <div class="content">
+            <p>{{capsaName}}</p>
+            <p>{{capsaTitle}}</p>
+            <p>{{capsaEmpTime}}</p>
+            <p>{{capsaSummary}}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column2">
+            <button type="button" class="collapsible "><img class="emplogo" src="./images/workHistory/Integra.png"
+                alt="Integra"></button>
+            <div class="content">
+              <p>{{integraName}}</p>
+              <p>{{integraTitle}}</p>
+              <p>{{integraEmpTime}}</p>
+              <p>{{integraSummary}}</p>
+            </div>
+          </div>
+
+          <div class="column2">
+            <button type="button" class="collapsible "><img class="emplogo" src="./images/workHistory/engilitybrand.png"
+                alt="Engility"></button>
+            <div class="content">
+              <p>{{engilityName}}</p>
+              <p>{{engilityTitle}}</p>
+              <p>{{engilityEmpTime}}</p>
+              <p>{{engilitySummary}}</p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
