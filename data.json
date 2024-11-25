@@ -5,9 +5,9 @@
     "navProjects" :  "Skill Stack", 
     "navTitle" :  "Home", 
     "aboutMe" :  "About Me", 
-    "photoOfMe" :  "Recent Photo:", 
-    "mainTitle" :  "Senior Site Reliability Engineer Consultant", 
-    "mainSummary" :  "I am a senior software engineer and site reliability engineer with a passion for creating and maintaining high-quality software systems. I have over 10 years of experience in software development for various industries, such as government, healthcare, and gaming. I have a strong background in troubleshooting, development operations, architecture, software development life cycle, CI/CD, devops, site reliability, software methodologies and use of best practices and adopted patterns. I enjoy working with cutting-edge technologies and solving complex problems. I am always eager to learn new skills and improve my existing ones. I am looking for a challenging and rewarding position where I can apply my expertise and contribute to the success of the organization.", 
+    "photoOfMe" :  "Recent Photo:",
+    "mainTitle" :  "Senior Site Reliabiliby Engineer Consultant", 
+    "mainSummary" :  "As an experienced engineer, I have a deep-seated passion for building and maintaining top-tier software systems. I’ve worked in diverse sectors including government, healthcare, and gaming. My expertise lies in troubleshooting, architecture, CI/CD, devops, site reliability, software methodologies, and the application of best practices and adopted patterns. I thrive on working with the latest technologies, including AI prompt crafting/engineering, retrieval augmented generation(RAG) and untangling complex problems. I’m always on the lookout for opportunities to learn new skills and refine my existing ones. I’m currently seeking a challenging and fulfilling role where I can leverage my skills to contribute to an organization’s success.", 
     "mainContactMe" :  "Professional Links", 
     "mainExperience" :  "Experience", 
     "nautilusName" :  "Nautilus Inc.", 
@@ -20,7 +20,12 @@
     "integraEmpTime" :  "Aug 2015 - Aug 2016", 
     "engilityEmpTime" :  "Aug 2014 - Aug 2015", 
     "nautilusSummary" :  "Set up application monitoring for a Kubernetes cluster, synthetic testing, logging, tooling automation, Terraform templates, task automation, and webhook integrations for proprietary applications and business operations. Automate business operations, standardize source control with GIT-flow, create application pipelines for EC2 instances and Lambdas, and create CloudFormation templates. Support and create serverless microservices in C#, Python3.6, and NodeJs.", 
-    "jgSummary" :  "Pioneered a platform that empowers engineers to deploy services seamlessly with zero downtime, equipped with comprehensive monitoring, SLAs, and alerting mechanisms, ensuring optimal service performance and reliability. Oversee the backend services of game studios by developing, testing, launching, maintaining, and monitoring microservices/applications. Constructed and maintained a multi-regional cloud infrastructure that guarantees high availability, effectively accommodating the dynamic needs of the user base and enhancing service resilience. Applied AI techniques like prompt engineering and RAG to build an efficient AI Chat Agent providing accurate and reliable information extracted and indexed from proprietary company data. Developed an automated system for GitHub Pull Requests, improving team productivity and code quality. Executed continuous integration and delivery of new microservices/applications and resolved large-scale deployment issues on Linux and Windows systems within a Kubernetes environment.", 
+    "jgSummary1":"Pioneered a platform that empowers engineers to deploy services seamlessly with zero downtime, equipped with comprehensive monitoring, SLAs, and alerting mechanisms, ensuring optimal service performance and reliability.",
+    "jgSummary2":"Oversee the backend services of game studios by developing, testing, launching, maintaining, and monitoring microservices/applications." ,
+    "jgSummary3":"Constructed and maintained a multi-regional cloud infrastructure that guarantees high availability, effectively accommodating the dynamic needs of the user base and enhancing service resilience.",
+    "jgSummary4":"Applied AI techniques like prompt engineering and RAG to build an efficient AI Chat Agent providing accurate and reliable information extracted and indexed from proprietary company data.",
+    "jgSummary5":"Developed an automated system for GitHub Pull Requests, improving team productivity and code quality.",
+    "jgSummary6":"Executed continuous integration and delivery of new microservices/applications and resolved large-scale deployment issues on Linux and Windows systems within a Kubernetes environment.",
     "capsaName" :  "Capsa Healthcare", 
     "capsaTitle" :  "Senior Software Engineer", 
     "capsaSummary" :  "Researched, innovated, and designed scalable applications for software, firmware, and interfaces. Implemented new utilities, data configuration, and data extraction for the application infrastructure. Prototyped new capabilities and migrated Azure Data server, cloud services, and web applications.", 
@@ -34,5 +39,6 @@
     "githubTitle" :  "GitHub", 
     "linkedInLink" :  "https://www.linkedin.com/in/john-paul-justice", 
     "linkedInTitle" :  "LinkedIn", 
-    "skillSet" :  "Skill Set" 
+    "skillSet" :  "Skill Set"
+    
 }
