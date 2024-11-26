@@ -12,6 +12,9 @@
         jsonInfo = data;
       }
     });
+
+
+    
     
     $scope.mainName = angular.uppercase(jsonInfo.mainName);
     $scope.mainNameTitle = jsonInfo.mainName;
@@ -35,7 +38,12 @@
     $scope.integraEmpTime = jsonInfo.integraEmpTime;
     $scope.engilityEmpTime = jsonInfo.engilityEmpTime;
     $scope.nautilusSummary = jsonInfo.nautilusSummary;
-    $scope.jgSummary = jsonInfo.jgSummary;
+    $scope.jgSummary1 = jsonInfo.jgSummary1;
+    $scope.jgSummary2 = jsonInfo.jgSummary2;
+    $scope.jgSummary3 = jsonInfo.jgSummary3;
+    $scope.jgSummary4 = jsonInfo.jgSummary4;
+    $scope.jgSummary5 = jsonInfo.jgSummary5;
+    $scope.jgSummary6 = jsonInfo.jgSummary6;
     $scope.capsaName = jsonInfo.capsaName;
     $scope.capsaTitle = jsonInfo.capsaTitle;
     $scope.capsaSummary = jsonInfo.capsaSummary;
@@ -51,23 +59,43 @@
     $scope.linkedInTitle = jsonInfo.linkedInTitle;
     $scope.skillSet = jsonInfo.skillSet;
 
+    var colls = document.getElementsByClassName("collapsible");
+    var dolls = document.getElementsByClassName("collapsible");
+    
+    function closeAll() {
+        for(var dol of dolls) {
+          dol.classList.toggle("active");
+          dol.nextElementSibling.style.display = "none";
+        }
+    }
+    for(var col of colls) {
 
-
-
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
+      col.addEventListener("click", function() {
+        closeAll();
         this.classList.toggle("active");
         var content = this.nextElementSibling;
         if (content.style.display === "block") {
-          content.style.display = "none";
+             content.style.display = "none";
         } else {
-          content.style.display = "block";
+            content.style.display = "block";
         }
-      });
+    });
     }
+    
+    // var coll = document.getElementsByClassName("collapsible");
+    // var i;
+
+    // for (i = 0; i < coll.length; i++) {
+    //   coll[i].addEventListener("click", function() {
+    //     this.classList.toggle("active");
+    //     var content = this.nextElementSibling;
+    //     if (content.style.display === "block") {
+    //       content.style.display = "none";
+    //     } else {
+    //       content.style.display = "block";
+    //     }
+    //   });
+    // }
     // var devopsChart = new Chart(document.getElementById("devops"), {
     //   type: 'bar',
     //   data: {
