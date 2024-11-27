@@ -60,26 +60,26 @@
     $scope.skillSet = jsonInfo.skillSet;
 
     var colls = document.getElementsByClassName("collapsible");
-    var dolls = document.getElementsByClassName("collapsible");
     
     function closeAll() {
-        for(var dol of dolls) {
-          dol.classList.toggle("active");
-          dol.nextElementSibling.style.display = "none";
-        }
+      for (var col of colls) {
+        col.classList.remove("active");
+        var content = col.nextElementSibling;
+        content.style.display = "none";
+      }
     }
-    for(var col of colls) {
 
+    for (var col of colls) {
       col.addEventListener("click", function() {
-        closeAll();
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-             content.style.display = "none";
+        if (this.classList.contains("active")) {
+          this.classList.remove("active");
+          this.nextElementSibling.style.display = "none";
         } else {
-            content.style.display = "block";
+          closeAll();
+          this.classList.add("active");
+          this.nextElementSibling.style.display = "block";
         }
-    });
+      });
     }
     
     // var coll = document.getElementsByClassName("collapsible");
