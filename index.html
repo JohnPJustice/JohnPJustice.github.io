@@ -23,27 +23,79 @@
     </div>
   </div>
 
+  <button type="button" onclick="document.getElementById('resumeModal').style.display='block '"
+    class="modal-btn-content flier"><img src="images/rocketship.png" alt="rocketship" alt="Download Resume" width="50"
+      height="75"></button>
+
+  <section>
+    <img class="bottom" src="img.png" alt="Description of image" />
+    <img class="top" src="img-2.png" alt="Description of image" />
+  </section>
+
+  <div id="resumeModal" class="modal">
+    <div class="modal-content modal-card-4">
+      <header class="modal-container">
+        <span onclick="document.getElementById('resumeModal').style.display='none'"
+          class=" modal-display-topright">&times;</span>
+        <div class="typed-out">
+          <h2>{{jgName}}</h2>
+        </div>
+      </header>
+      <div class="modal-container">
+        <div class="typed-out delay-1">
+          <a href="/docs/Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="at-second-render-container">
     <div class="at-second-render-item">
       <div class="main-topics">
         <h2>{{skillSet}}</h2>
       </div>
-      <button type="button" class="collapsible">DevOps Skills</button>
-      <div class="content">
-        <canvas id="devops" ></canvas>
+      <div class="skillset">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="stars">
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="stars">
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="stars">
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Python</span>
+          <div class="stars">
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star"></div>
+          </div>
+        </div>
       </div>
-      <button type="button" class="collapsible">Coding Skills</button>
-      <div class="content">
-        <canvas id="codingChart" ></canvas>
-      </div>
-      <button type="button" class="collapsible">Method Expereince</button>
-      <div class="content">
-        <canvas id="methodChart" ></canvas>
-      </div>
-      <button type="button" class="collapsible">Fullstack Skills</button>
-      <div class="content">
-        <canvas id="fullStackChart" ></canvas>
-      </div>
+
     </div>
   </div>
 

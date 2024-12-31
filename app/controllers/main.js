@@ -104,9 +104,6 @@
         }
       }
     }
-
-
-
     
 
     var coll = document.getElementsByClassName("collapsible");
@@ -124,115 +121,135 @@
       });
     }
 
-    var devopsChart = new Chart(document.getElementById("devops"), {
-      type: 'bar',
-      data: {
-        labels: ["Kubernetes", "Testing/Automated Test", "Monitoring/Logging", "Distributed Computing", "Automation/Tooling", "Databases", "Coding", "CICD", "Operation Systems"],
-        datasets: [{
-          label: "Professional Years Experience",
-          backgroundColor:  "rgb(102, 121, 182)",
-          data: [4, 10, 7, 5, 9, 11, 11, 11, 8],
-        },
-        {
-          label: "Personal Years Experience",
-          backgroundColor:  "rgb(168, 176, 200)",
-          data: [5, 12, 7, 7, 11, 11, 11, 11, 11],
-        }
-        ]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'DevOps Skill Experience'
-        },
-      }
-    });
-    var codingChart = new Chart(document.getElementById("codingChart"), {
-      type: 'bar',
-      data: {
-        labels: ["Python", "C#", "Javascript", "Terraform", "Docker", "Pack", "GoLang",],
-        datasets: [{
-          label: "Professional Years Experience",
-          backgroundColor: 'rgb(102, 121, 182)',
-          data: [7, 10, 8, 4, 6, 1, 4]
-        },
-        {
-          label: "Personal Years Experience",
-          backgroundColor: "rgb(168, 176, 200)",
-          data: [6, 11, 10, 3, 7, 3, 5]
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Code Language Experience'
-        },
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        }
-      }
-    });
-    var methodChart = new Chart(document.getElementById("methodChart"), {
-      type: 'bar',
-      data: {
-        labels: ["Joint Application Development", "Feature Driven Development", "Agile", "Waterfall/Canban", "Rapid Development", "Devops", "Spiral"],
-        datasets: [{
-          label: "Professional Years Experience",
-          backgroundColor: 'rgb(102, 121, 182)',
-          data: [5, 5, 4, 8, 6, 8, 3],
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Practiced Methodologies'
-        },
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        }
-      }
-    });
-    var fullStackChart = new Chart(document.getElementById("fullStackChart"), {
-      type: 'bar',
-      data: {
-        labels: ["Front End", "Back End", "Datbase Management", "Verson Control", "Pattern Development", "Solution Architechure"],
-        datasets: [{
-          label: "Professional Years Experience",
-          backgroundColor: 'rgb(102, 121, 182)',
-          data: [9, 10, 10, 11, 10, 6],
-        }, {
-          label: "Personal Years Experience",
-          backgroundColor: 'rgb(168, 176, 200)',
-          data: [10, 11, 10, 11, 11, 7],
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Full Stack Experience'
-        },
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        }
-      }
-    });
+    // var devopsChart = new Chart(document.getElementById("devops"), {
+    //   type: 'bar',
+    //   data: {
+    //     labels: ["Kubernetes", "Testing/Automated Test", "Monitoring/Logging", "Distributed Computing", "Automation/Tooling", "Databases", "Coding", "CICD", "Operation Systems"],
+    //     datasets: [{
+    //       label: "Professional Years Experience",
+    //       backgroundColor:  "rgb(102, 121, 182)",
+    //       data: [4, 10, 7, 5, 9, 11, 11, 11, 8],
+    //     },
+    //     {
+    //       label: "Personal Years Experience",
+    //       backgroundColor:  "rgb(168, 176, 200)",
+    //       data: [5, 12, 7, 7, 11, 11, 11, 11, 11],
+    //     }
+    //     ]
+    //   },
+    //   options: {
+    //     title: {
+    //       display: true,
+    //       text: 'DevOps Skill Experience'
+    //     },
+    //   }
+    // });
 
-    devopsChart.render();
-    codingChart.render();
-    methodChart.render();
-    fullStackChart.render();
+    // var devopsPieChart = new Chart(document.getElementById("devopsPie"), {
+    //   type: "pie",
+    //   data: {
+    //     labels: ["Kubernetes", "Testing/Automated Test", "Monitoring/Logging", "Distributed Computing", "Automation/Tooling", "Databases", "Coding", "CICD", "Operation Systems"],
+    //     datasets: [{
+    //       label: "Professional Years Experience",
+    //       backgroundColor:  ["#0474fb","#fcdc7c","#0464d4","#a48474","#ead6d2","#3c3ff4e","#0474fb","#ead6d2","#a48474"],
+    //       data: [4, 10, 7, 5, 9, 11, 11, 11, 8],
+    //     }]
+    //   },
+    //   options: {
+    //     title: {
+    //       display: true,
+    //       text: 'Years of DevOps Experience'
+    //     },
+    //   }
+    // });
+
+    // var codingChart = new Chart(document.getElementById("codingChart"), {
+    //   type: 'bar',
+    //   data: {
+    //     labels: ["Python", "C#", "Javascript", "Terraform", "Docker", "Pack", "GoLang",],
+    //     datasets: [{
+    //       label: "Professional Years Experience",
+    //       backgroundColor: 'rgb(102, 121, 182)',
+    //       data: [7, 10, 8, 4, 6, 1, 4]
+    //     },
+    //     {
+    //       label: "Personal Years Experience",
+    //       backgroundColor: "rgb(168, 176, 200)",
+    //       data: [6, 11, 10, 3, 7, 3, 5]
+    //     }]
+    //   },
+    //   options: {
+    //     title: {
+    //       display: true,
+    //       text: 'Code Language Experience'
+    //     },
+    //     scales: {
+    //       yAxes: [{
+    //         ticks: {
+    //           beginAtZero: true
+    //         }
+    //       }]
+    //     }
+    //   }
+    // });
+    // var methodChart = new Chart(document.getElementById("methodChart"), {
+    //   type: 'bar',
+    //   data: {
+    //     labels: ["Joint Application Development", "Feature Driven Development", "Agile", "Waterfall/Canban", "Rapid Development", "Devops", "Spiral"],
+    //     datasets: [{
+    //       label: "Professional Years Experience",
+    //       backgroundColor: 'rgb(102, 121, 182)',
+    //       data: [5, 5, 4, 8, 6, 8, 3],
+    //     }]
+    //   },
+    //   options: {
+    //     title: {
+    //       display: true,
+    //       text: 'Practiced Methodologies'
+    //     },
+    //     scales: {
+    //       yAxes: [{
+    //         ticks: {
+    //           beginAtZero: true
+    //         }
+    //       }]
+    //     }
+    //   }
+    // });
+    // var fullStackChart = new Chart(document.getElementById("fullStackChart"), {
+    //   type: 'bar',
+    //   data: {
+    //     labels: ["Front End", "Back End", "Datbase Management", "Verson Control", "Pattern Development", "Solution Architechure"],
+    //     datasets: [{
+    //       label: "Professional Years Experience",
+    //       backgroundColor: 'rgb(102, 121, 182)',
+    //       data: [9, 10, 10, 11, 10, 6],
+    //     }, {
+    //       label: "Personal Years Experience",
+    //       backgroundColor: 'rgb(168, 176, 200)',
+    //       data: [10, 11, 10, 11, 11, 7],
+    //     }]
+    //   },
+    //   options: {
+    //     title: {
+    //       display: true,
+    //       text: 'Full Stack Experience'
+    //     },
+    //     scales: {
+    //       yAxes: [{
+    //         ticks: {
+    //           beginAtZero: true
+    //         }
+    //       }]
+    //     }
+    //   }
+    // });
+
+    // // devopsChart.render();
+    // devopsPieChart.render();
+    // codingChart.render();
+    // methodChart.render();
+    // fullStackChart.render();
   });
 
 })();

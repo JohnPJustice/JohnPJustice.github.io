@@ -177,7 +177,8 @@ body {
   background-color: transparent;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
   background-color: lightseagreen;
 }
 
@@ -302,6 +303,7 @@ body {
     flex-direction: column;
   }
 }
+
 .row {
   display: flex;
   align-items: center;
@@ -353,7 +355,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4)
 }
 
-.modal-btn-content{
+.modal-btn-content {
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -364,11 +366,12 @@ body {
   font-size: 15px;
   background-color: transparent;
 }
+
 .modal-content {
   margin: auto;
   background-color: black;
   position: relative;
-  color:green;
+  color: green;
   font: consolas;
   padding: 0;
   outline: 0;
@@ -423,3 +426,94 @@ body {
   right: 0;
   top: 0
 }
+
+#devopsPie {
+
+  width: 100%;
+  max-width: 600px
+}
+
+.flier {
+  pointer-events: none;
+}
+
+.flier>* {
+  /* Adjust animation duration to change the element’s speed */
+  animation: fly 50s linear 1;
+  pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 5s;
+  z-index: -1;
+}
+
+@keyframes fly {
+
+  98.001%,
+  0% {
+    display: block;
+    transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+  }
+
+  15% {
+    transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+  }
+
+  15.001%,
+  18% {
+    transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+  }
+
+  40% {
+    transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+  }
+
+  40.001%,
+  43% {
+    transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+  }
+
+  65% {
+    transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+  }
+
+  65.001%,
+  68% {
+    transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+  }
+
+  95% {
+    transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+  }
+}
+
+
+.skillset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+
+  .skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  }
+
+  .stars {
+  display: flex;
+  gap: 5px;
+  }
+
+  .star {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+
+  .star.filled {
+  background-color: #ff0;
+  }
