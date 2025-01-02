@@ -23,14 +23,10 @@
     </div>
   </div>
 
-  <button type="button" onclick="document.getElementById('resumeModal').style.display='block '"
-    class="modal-btn-content flier"><img src="images/rocketship.png" alt="rocketship" alt="Download Resume" width="50"
+  <!-- Rocket Ship Flier -->
+  <button type="button" class="modal-btn-content flier"><img src="images/rocketship.png" alt="rocketship" width="50"
       height="75"></button>
 
-  <section>
-    <img class="bottom" src="img.png" alt="Description of image" />
-    <img class="top" src="img-2.png" alt="Description of image" />
-  </section>
 
   <div id="resumeModal" class="modal">
     <div class="modal-content modal-card-4">
@@ -48,55 +44,62 @@
       </div>
     </div>
   </div>
+
+  <!-- Skill set -->
   <div class="at-second-render-container">
     <div class="at-second-render-item">
       <div class="main-topics">
         <h2>{{skillSet}}</h2>
       </div>
-      <div class="skillset">
-        <div class="skill">
-          <span>HTML</span>
-          <div class="stars">
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
+      <div class="row">
+        <div class="column">
+          <button type="button" onclick="document.getElementById('devopsModal').style.display='block'"
+            class="modal-btn-content"><img class="emplogo" src="./images/DevopsSkills.png" alt="Devops Skills"></button>
+          <div id="devopsModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('devopsModal').style.display='none'"
+                  class=" modal-display-topright">&times;</span>
+              </header>
+              <div class="modal-container">
+                <canvas id="devopsChart" class="chartjs-render-monitor"></canvas>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="skill">
-          <span>CSS</span>
-          <div class="stars">
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star"></div>
+        <div class="column">
+          <button type="button" onclick="document.getElementById('codingModal').style.display='block'"
+            class="modal-btn-content"><img class="emplogo" src="./images/CodingSkills.png" alt="Coding Skills"></button>
+          <div id="codingModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('codingModal').style.display='none'"
+                  class="modal-button modal-display-topright">&times;</span>
+              </header>
+              <div class="modal-container">
+                <canvas id="codingChart" class="chartjs-render-monitor"></canvas>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="skill">
-          <span>JavaScript</span>
-          <div class="stars">
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Python</span>
-          <div class="stars">
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star filled"></div>
-            <div class="star"></div>
+      <div class="column">
+        <button type="button" onclick="document.getElementById('cloudModal').style.display='block'"
+          class="modal-btn-content"><img class="emplogo" src="./images/CloudSkills.png" alt="Cloud Skills"></button>
+        <div id="cloudModal" class="modal">
+          <div class="modal-content modal-card-4">
+            <header class="modal-container">
+              <span onclick="document.getElementById('cloudModal').style.display='none'"
+                class=" modal-display-topright">&times;</span>
+            </header>
+            <div class="modal-container">
+              <canvas id="cloudChart" class="chartjs-render-monitor"></canvas>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
+  </div>
   </div>
 
 
