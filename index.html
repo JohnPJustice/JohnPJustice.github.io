@@ -2,130 +2,299 @@
 <html lang="en" ng-app="app">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>{{mainNameTitle}}</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.css" rel="stylesheet" />
-  <script src="Scripts/angular.js"></script>
-  <script src="Scripts/jquery-1.12.1.js"></script>
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/jquery-1.12.1.js"></script>
   <script src="app/controllers/main.js"></script>
-  <script src="Scripts/angular-route.min.js"></script>
-  <script src="Scripts/charts.min.js"></script>
+  <script src="scripts/angular-route.min.js"></script>
+  <script src="scripts/charts.min.js"></script>
 </head>
+
 <body ng-controller="mainController">
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>{{mainName}}</h1>
-    <p style="font-family:sans-serif;">{{mainTitle}}</p>
-  </div>
-  <nav class="navbar">
-    <a class="navbar-brand" href="#"></a>
-    </button>
-  </nav>
-
-  <div class="jobDetail" style="margin-left: 100px; margin-right: 100px;">
-    <h2 align="center">{{skillSet}}</h2>
-    <div class="col-sm-2 chart"><canvas id="devops"></canvas></div>
-    <div class="col-sm-2 chart"><canvas id="codingChart"></canvas></div>
-
-    <div class="col-sm-2 chart"><canvas id="methodChart"></canvas></div>
-    <div class="col-sm-2 chart"><canvas id="fullStackChart"></canvas></div>
+  <div class='at-container'>
+    <div class='at-item'>{{mainName}}</div>
   </div>
 
-  <div class="container jobDetail" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-4">
-        <h2>{{aboutMe}}</h2>
-        <h5>{{photoOfMe}}</h5>
-        <div class="portraitImg">
-          <img src="images/jj.png" title="Portrait">
+  <div class="at-common-container">
+    <div class="at-common-item">
+      <div>{{mainTitle}}</div>
+    </div>
+  </div>
+
+  <!-- Rocket Ship Flier -->
+  <button type="button" class="modal-btn-content flier"><img src="images/rocketship.png" alt="rocketship" width="50"
+      height="75"></button>
+
+
+  <div id="resumeModal" class="modal">
+    <div class="modal-content modal-card-4">
+      <header class="modal-container">
+        <span onclick="document.getElementById('resumeModal').style.display='none'"
+          class=" modal-display-topright">&times;</span>
+        <div class="typed-out">
+          <h2>{{jgName}}</h2>
         </div>
-        <br />
-        <p>{{mainSummary}}</p>
-        <h3>{{mainContactMe}}</h3>
-        <p></p>
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href={{githubLink}}>{{githubTitle}}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href={{linkedInLink}}>{{linkedInTitle}}</a>
-          </li>
-        </ul>
+      </header>
+      <div class="modal-container">
+        <div class="typed-out delay-1">
+          <a href="/docs/Resume.pdf" download>Download Resume</a>
+        </div>
       </div>
-      <div class="col-sm-8">
+    </div>
+  </div>
+
+  <!-- Skill set -->
+  <div class="at-second-render-container">
+    <div class="at-second-render-item">
+      <div class="main-topics">
+        <h2>{{skillSet}}</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <button type="button" onclick="document.getElementById('devopsModal').style.display='block'"
+            class="modal-btn-content"><img class="emplogo" src="./images/DevopsSkills.png" alt="Devops Skills"></button>
+          <div id="devopsModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('devopsModal').style.display='none'"
+                  class=" modal-display-topright">&times;</span>
+              </header>
+              <div class="modal-container">
+                <canvas id="devopsChart" class="chartjs-render-monitor"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <button type="button" onclick="document.getElementById('codingModal').style.display='block'"
+            class="modal-btn-content"><img class="emplogo" src="./images/CodingSkills.png" alt="Coding Skills"></button>
+          <div id="codingModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('codingModal').style.display='none'"
+                  class="modal-button modal-display-topright">&times;</span>
+              </header>
+              <div class="modal-container">
+                <canvas id="codingChart" class="chartjs-render-monitor"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="column">
+        <button type="button" onclick="document.getElementById('cloudModal').style.display='block'"
+          class="modal-btn-content"><img class="emplogo" src="./images/CloudSkills.png" alt="Cloud Skills"></button>
+        <div id="cloudModal" class="modal">
+          <div class="modal-content modal-card-4">
+            <header class="modal-container">
+              <span onclick="document.getElementById('cloudModal').style.display='none'"
+                class=" modal-display-topright">&times;</span>
+            </header>
+            <div class="modal-container">
+              <canvas id="cloudChart" class="chartjs-render-monitor"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="at-second-render-container">
+    <div class="at-second-render-item">
+      <div class="main-topics">
         <h2>{{mainExperience}}</h2>
-        <div class="col-sm-6">
-          <h3>{{jgName}}</h3>
-          <h5>{{jgPosition}}</h5>
-          <h6>{{jgEmpTime}}</h6>
+      </div>
+      <div class="row">
+        <div class="column">
+          <button type="button" onclick="document.getElementById('jgModal').style.display='block '"
+            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/jg.png" alt="JG"></button>
+          <div id="jgModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('jgModal').style.display='none'"
+                  class=" modal-display-topright">&times;</span>
+                <div class="typed-out">
+                  <h2>{{jgName}}</h2>
+                </div>
+              </header>
+              <div class="modal-container">
+                <div class="typed-out delay-1">
+                  <p>{{jgPosition}}</p>
+                </div>
+                <div class="typed-out delay-2">
+                  <p>{{jgEmpTime}}</p>
+                </div>
+                <div class="typed-out delay-3">
+                  <p>{{jgSummary1}}</p>
+                </div>
+                <div class="typed-out delay-4">
+                  <p>{{jgSummary2}}</p>
+                </div>
+                <div class="typed-out delay-5">
+                  <p>{{jgSummary3}}</p>
+                </div>
+                <div class="typed-out delay-6">
+                  <p>{{jgSummary4}}</p>
+                </div>
+                <div class="typed-out delay-7">
+                  <p>{{jgSummary5}}</p>
+                </div>
+                <div class="typed-out delay-8">
+                  <p>{{jgSummary6}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-12 jgImp">
-          <img src="images/workHistory/jg.png" title="Jahnel Group">
+        <div class="column">
+          <button type="button" onclick="document.getElementById('nautilusModal').style.display='block'"
+            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/nautilusBrandinc.png"
+              alt="Nautilus"></button>
+          <div id="nautilusModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('nautilusModal').style.display='none'"
+                  class="modal-button modal-display-topright">&times;</span>
+                <div class="typed-out">
+                  <h2>{{nautilusName}}</h2>
+                </div>
+              </header>
+              <div class="modal-container">
+                <div class="typed-out delay-1">
+                  <P>{{nautilusPostition}}</P>
+                </div>
+                <div class="typed-out delay-2">
+                  <p>{{nautilusEmpTime}}</p>
+                </div>
+                <div class="typed-out delay-3">
+                  <p>{{nautilusSummary1}}</p>
+                </div>
+                <div class="typed-out delay-4">
+                  <p>{{nautilusSummary2}}</p>
+                </div>
+                <div class="typed-out delay-5">
+                  <p>{{nautilusSummary3}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-12">
-          <p>{{jgSummary}}</p>
+        <div class="column">
+          <button type="button" onclick="document.getElementById('capsaModal').style.display='block'"
+            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/capsaBrand.png"
+              alt="Capsa"></button>
+          <div id="capsaModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('capsaModal').style.display='none'"
+                  class=" modal-display-topright">&times;</span>
+                <div class="typed-out">
+                  <h2>{{capsaName}}</h2>
+                </div>
+              </header>
+              <div class="modal-container">
+                <div class="typed-out delay-1">
+                  <p>{{capsaTitle}}</p>
+                </div>
+                <div class="typed-out delay-2">
+                  <p>{{capsaEmpTime}}</p>
+                </div>
+                <div class="typed-out delay-3">
+                  <p>{{capsaSummary1}}</p>
+                </div>
+                <div class="typed-out delay-4">
+                  <p>{{capsaSummary2}}</p>
+                </div>
+                <div class="typed-out delay-5">
+                  <p>{{capsaSummary3}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <br>
-        <div class="col-sm-6">
-          <h3>{{nautilusName}}</h3>
-          <h5>{{nautilusPostition}}</h5>
-          <h6>{{nautilusEmpTime}}</h6>
+        <div class="column">
+          <button type="button" onclick="document.getElementById('integraModal').style.display='block'"
+            class="modal-btn-content">
+            <img class="emplogo" src="./images/workHistory/Integra.png" alt="Integra">
+          </button>
+          <div id="integraModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('integraModal').style.display='none'"
+                  class=" modal-display-topright">&times;</span>
+                <div class="typed-out">
+                  <h2>{{integraName}}</h2>
+                </div>
+              </header>
+              <div class="modal-container">
+                <div class="typed-out delay-1">
+                  <p>{{integraTitle}}</p>
+                </div>
+                <div class="typed-out delay-2">
+                  <p>{{integraEmpTime}}</p>
+                </div>
+                <div class="typed-out delay-3">
+                  <p>{{integraSummary1}}</p>
+                </div>
+                <div class="typed-out delay-4">
+                  <p>{{integraSummary2}}</p>
+                </div>
+                <div class="typed-out delay-5">
+                  <p>{{integraSummary3}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/nautilusBrandinc.png" title="Nautilus">
-        </div>
-        <div class="col-sm-12">
-          <p>{{nautilusSummary}}</p>
-        </div>
-        <br>
-        <div class="col-sm-6">
-          <h3>{{capsaName}}</h3>
-          <h5>{{capsaTitle}}</h5>
-          <h6>{{capsaEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/capsaBrand.png" title="Capsa Healthcare">
-        </div>
-        <div class="col-sm-12">
-          <p>{{capsaSummary}}</p>
-        </div>
-
-        <br>
-        <div class="col-sm-6">
-          <h3>{{integraName}}</h3>
-          <h5>{{integraTitle}}</h5>
-          <h6>{{integraEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/Integra.png" title="Integra Telecom">
-        </div>
-        <div class="col-sm-12">
-          <p>{{integraSummary}}</p>
-        </div>
-        <br>
-        <div class="col-sm-6">
-          <h3>{{engilityName}}</h3>
-          <h5>{{engilityTitle}}</h5>
-          <h6>{{engilityEmpTime}}</h6>
-        </div>
-        <div class="col-sm-12 empImp">
-          <img src="images/workHistory/engilitybrand.png" title="Engility">
-        </div>
-        <div class="col-sm-12">
-          <p>{{engilitySummary}}</p>
+        <div class="column">
+          <button type="button" onclick="document.getElementById('engilityModal').style.display='block'"
+            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/engilitybrand.png"
+              alt="Engility"></button>
+          <div id="engilityModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('engilityModal').style.display='none'"
+                  class=" modal-display-topright">&times;</span>
+                <div class="typed-out">
+                  <h2>{{engilityName}}</h2>
+                </div>
+              </header>
+              <div class="modal-container">
+                <div class="typed-out delay-1">
+                  <p>{{engilityTitle}}</p>
+                </div>
+                <div class="typed-out delay-2">
+                  <p>{{engilityEmpTime}}</p>
+                </div>
+                <div class="typed-out delay-3">
+                  <p>{{engilitySummary1}}</p>
+                </div>
+                <div class="typed-out delay-4">
+                  <p>{{engilitySummary2}}</p>
+                </div>
+                <div class="typed-out delay-5">
+                  <p>{{engilitySummary3}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <br>
-    <br>
-    <br>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-      <div align=center>&copy;
-        <script>document.write(" " + new Date().getFullYear());</script>
-      </div>
+
+
+  <div class="main"></div>
+  <footer>
+    <div class="at-common-item">&copy;
+      <script>document.write(" " + new Date().getFullYear());</script>
     </div>
-
+  </footer>
 </body>
 
 </html>
