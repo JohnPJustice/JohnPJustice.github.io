@@ -130,6 +130,15 @@
         }]
       },
       options: {
+        plugins:{
+          legend:{
+            labels:{
+              font:{
+                family: 'Arial'
+              }
+            }
+          }
+        },
         title: {
           display: true,
           text: 'DevOps Skill Experience'
@@ -155,6 +164,15 @@
         }]
       },
       options: {
+        plugins:{
+          legend:{
+            labels:{
+              font:{
+                family: 'consolas'
+              }
+            }
+          }
+        },
         title: {
           display: true,
           text: 'Code Language Experience'
@@ -179,6 +197,15 @@
         }]
       },
       options: {
+        plugins:{
+          legend:{
+            labels:{
+              font:{
+                family: 'consolas'
+              }
+            }
+          }
+        },
         title: {
           display: true,
           text: 'Full Stack Experience'
