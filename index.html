@@ -19,31 +19,17 @@
 
   <div class="at-common-container">
     <div class="at-common-item">
-      <div>{{mainTitle}}</div>
-    </div>
-  </div>
-
-  <!-- Rocket Ship Flier -->
-  <!-- <button type="button" class="modal-btn-content flier"><img src="images/rocketship.png" alt="rocketship" width="50"
-      height="75"></button>
-
-
-  <div id="resumeModal" class="modal">
-    <div class="modal-content modal-card-4">
-      <header class="modal-container">
-        <span onclick="document.getElementById('resumeModal').style.display='none'"
-          class=" modal-display-topright">&times;</span>
-        <div class="typed-out">
-          <h2>{{jgName}}</h2>
-        </div>
-      </header>
-      <div class="modal-container">
-        <div class="typed-out delay-1">
-          <a href="/docs/Resume.pdf" download>Download Resume</a>
+      <div class="main-topics">
+        <h2>{{mainTitle}}</h2>
+      </div>
+      <div class="row">
+        <div class="summary">
+          <p>{{mainSummary}}</p>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
 
   <!-- Skill set -->
   <div class="at-second-render-container">
@@ -54,7 +40,7 @@
       <div class="row">
         <div class="column">
           <button type="button" onclick="document.getElementById('devopsModal').style.display='block'"
-            class="modal-btn-content"><img class="emplogo" src="./images/DevopsSkills.png" alt="Devops Skills"></button>
+            class="modal-btn-content"><img class="logo" src="./images/DevopsSkills.png" alt="Devops Skills"></button>
           <div id="devopsModal" class="modal">
             <div class="modal-content modal-card-4">
               <header class="modal-container">
@@ -69,7 +55,7 @@
         </div>
         <div class="column">
           <button type="button" onclick="document.getElementById('codingModal').style.display='block'"
-            class="modal-btn-content"><img class="emplogo" src="./images/CodingSkills.png" alt="Coding Skills"></button>
+            class="modal-btn-content"><img class="logo" src="./images/CodingSkills.png" alt="Coding Skills"></button>
           <div id="codingModal" class="modal">
             <div class="modal-content modal-card-4">
               <header class="modal-container">
@@ -82,24 +68,24 @@
             </div>
           </div>
         </div>
-      <div class="column">
-        <button type="button" onclick="document.getElementById('cloudModal').style.display='block'"
-          class="modal-btn-content"><img class="emplogo" src="./images/CloudSkills.png" alt="Cloud Skills"></button>
-        <div id="cloudModal" class="modal">
-          <div class="modal-content modal-card-4">
-            <header class="modal-container">
-              <span onclick="document.getElementById('cloudModal').style.display='none'"
-                class=" modal-display-topright">&times;</span>
-            </header>
-            <div class="modal-container">
-              <canvas id="cloudChart" class="chartjs-render-monitor"></canvas>
+        <div class="column">
+          <button type="button" onclick="document.getElementById('cloudModal').style.display='block'"
+            class="modal-btn-content"><img class="logo" src="./images/CloudSkills.png" alt="Cloud Skills"></button>
+          <div id="cloudModal" class="modal">
+            <div class="modal-content modal-card-4">
+              <header class="modal-container">
+                <span onclick="document.getElementById('cloudModal').style.display='none'"
+                  class=" modal-display-topright">&times;</span>
+              </header>
+              <div class="modal-container">
+                <canvas id="cloudChart" class="chartjs-render-monitor"></canvas>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
   </div>
 
 
@@ -111,7 +97,7 @@
       <div class="row">
         <div class="column">
           <button type="button" onclick="document.getElementById('jgModal').style.display='block '"
-            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/jg.png" alt="JG"></button>
+            class="modal-btn-content"><img class="logo" src="./images/workHistory/jg.png" alt="JG"></button>
           <div id="jgModal" class="modal">
             <div class="modal-content modal-card-4">
               <header class="modal-container">
@@ -152,7 +138,7 @@
         </div>
         <div class="column">
           <button type="button" onclick="document.getElementById('nautilusModal').style.display='block'"
-            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/nautilusBrandinc.png"
+            class="modal-btn-content"><img class="logo" src="./images/workHistory/nautilusBrandinc.png"
               alt="Nautilus"></button>
           <div id="nautilusModal" class="modal">
             <div class="modal-content modal-card-4">
@@ -185,8 +171,7 @@
         </div>
         <div class="column">
           <button type="button" onclick="document.getElementById('capsaModal').style.display='block'"
-            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/capsaBrand.png"
-              alt="Capsa"></button>
+            class="modal-btn-content"><img class="logo" src="./images/workHistory/capsaBrand.png" alt="Capsa"></button>
           <div id="capsaModal" class="modal">
             <div class="modal-content modal-card-4">
               <header class="modal-container">
@@ -219,7 +204,7 @@
         <div class="column">
           <button type="button" onclick="document.getElementById('integraModal').style.display='block'"
             class="modal-btn-content">
-            <img class="emplogo" src="./images/workHistory/Integra.png" alt="Integra">
+            <img class="logo" src="./images/workHistory/Integra.png" alt="Integra">
           </button>
           <div id="integraModal" class="modal">
             <div class="modal-content modal-card-4">
@@ -252,7 +237,7 @@
         </div>
         <div class="column">
           <button type="button" onclick="document.getElementById('engilityModal').style.display='block'"
-            class="modal-btn-content"><img class="emplogo" src="./images/workHistory/engilitybrand.png"
+            class="modal-btn-content"><img class="logo" src="./images/workHistory/engilitybrand.png"
               alt="Engility"></button>
           <div id="engilityModal" class="modal">
             <div class="modal-content modal-card-4">
@@ -287,11 +272,40 @@
     </div>
   </div>
 
-
+  <div class="at-second-render-container">
+    <div class="at-second-render-item">
+      <div class="main-topics">
+        <h2>{{navContact}}</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="contact-content">
+            <a class="logo" href="https://www.linkedin.com/in/john-paul-justice/" download>
+              <img height="75" width="75" src="images/LinkedIn-Logo.png" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="contact-content">
+            <a class="logo" href="https://github.com/JohnPJustice" download>
+              <img height="75" width="75" src="images/github.png" alt="Github">
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="contact-content">
+            <a class="logo" href="https://johnpjustice.github.io/docs/Resume.pdf" download>
+              <img  height="75" width="75" src="images/downloadIcon.png" alt="Download Resume">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="main-background"></div>
   <footer>
-    <div class="at-common-item">&copy;
+    <div class="at-copywrite-item">&copy;
       <script>document.write(" " + new Date().getFullYear());</script>
     </div>
   </footer>

@@ -14,25 +14,37 @@ div.at-common-container {
 .at-common-item {
   color: #d6dbe4;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
   word-wrap: calc(100% - 8px);
-
-
-  animation-name: focus-in-contract;
+  animation-name: focus-in-contract-static;
   animation-duration: 3.5s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
+  float: center;
 }
 
 .main-topics {
   font-family: consolas;
   text-align: center;
   align-content: center;
-  color: #fff;
+  color: green;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .at-common-item, .main-topics {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .at-common-item, .main-topics {
+    font-size: 12px;
+  }
 }
 
 div.at-second-render-container {
@@ -93,7 +105,7 @@ div.at-container {
 }
 
 .at-item {
-  color: #d6dbe4;
+  color: green;
   font-weight: bold;
   font-size: 3em;
   text-align: center;
@@ -122,7 +134,20 @@ div.at-container {
   }
 }
 
-.emplogo {
+@keyframes focus-in-contract-static {
+
+  0% {
+    filter: blur(13px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.logo {
   position: inherit;
   left: 21%;
   top: 25px;
@@ -140,6 +165,15 @@ div.at-container {
 body {
   background-color: #000;
   font-family: consolas;
+}
+
+.summary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgreen;
+  width: 60%;
+  font-size: 12px;
 }
 
 .main-background {
@@ -371,6 +405,22 @@ body {
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+}
+
+.contact-content{
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center; /* Center the text */
+  outline: none;
+  color: white;
+  font-size: 15px;
+  background-color: transparent;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  float: center;
 }
 
 .modal-content {
