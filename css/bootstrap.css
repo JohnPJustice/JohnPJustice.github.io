@@ -31,7 +31,7 @@ div.at-common-container {
   font-family: consolas;
   text-align: center;
   align-content: center;
-  color: green;
+  color: rgb(255, 107, 21);
   font-size: 14px;
 }
 
@@ -105,7 +105,7 @@ div.at-container {
 }
 
 .at-item {
-  color: green;
+  color: #d6dbe4;
   font-weight: bold;
   font-size: 3em;
   text-align: center;
@@ -171,9 +171,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: lightgreen;
+  color: green;
   width: 60%;
   font-size: 12px;
+  border: 3px solid green;
 }
 
 .main-background {
