@@ -36,13 +36,17 @@ div.at-common-container {
 }
 
 @media screen and (max-width: 600px) {
-  .at-common-item, .main-topics {
+
+  .at-common-item,
+  .main-topics {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .at-common-item, .main-topics {
+
+  .at-common-item,
+  .main-topics {
     font-size: 12px;
   }
 }
@@ -167,7 +171,7 @@ body {
   font-family: consolas;
 }
 
-.summary{
+.summary {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,7 +393,6 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4)
 }
 
@@ -398,29 +401,37 @@ body {
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: center; /* Center the text */
+  text-align: center;
+  /* Center the text */
   outline: none;
   color: white;
   font-size: 15px;
   background-color: transparent;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex;
+  /* Use flexbox for centering */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
 }
 
-.contact-content{
+.contact-content {
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: center; /* Center the text */
+  text-align: center;
+  /* Center the text */
   outline: none;
   color: white;
   font-size: 15px;
   background-color: transparent;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex;
+  /* Use flexbox for centering */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
   float: center;
 }
 
@@ -430,11 +441,11 @@ body {
   position: relative;
   color: green;
   font: consolas;
-  padding: 0;
+  padding: 10px;
   outline: 0;
   width: 550px;
   opacity: 0.9;
-  
+
 }
 
 .modal-card-4,
@@ -552,26 +563,26 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  }
+}
 
-  .skill {
+.skill {
   display: flex;
   align-items: center;
   gap: 10px;
-  }
+}
 
-  .stars {
+.stars {
   display: flex;
   gap: 5px;
-  }
+}
 
-  .star {
+.star {
   width: 20px;
   height: 20px;
   background-color: #ddd;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  }
+}
 
-  .star.filled {
+.star.filled {
   background-color: #ff0;
-  }
+}
