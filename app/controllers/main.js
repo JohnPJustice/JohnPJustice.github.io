@@ -208,7 +208,7 @@
         },
         title: {
           display: true,
-          text: 'Full Stack Experience'
+          text: 'Cloud Experience'
         },
         scales: {
           yAxes: [{
