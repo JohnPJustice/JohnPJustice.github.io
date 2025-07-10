@@ -1,0 +1,180 @@
+/* Main header title style */
+.main-header-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+/* modern.css - Modernized styles for John P. Justice Portfolio */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+
+:root {
+  --primary: #181c2a;
+  --secondary: #2d3250;
+  --accent: #ff6a3d;
+  --background: #15161a;
+  --text: #e0e6f7;
+  --card-bg: #23263a;
+  --shadow: 0 4px 24px rgba(20,20,40,0.18);
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header, footer {
+  background: var(--primary);
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.at-container, .at-common-container, .at-second-render-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid #23263a;
+}
+
+.main-topics h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.03em;
+}
+
+.summary p {
+  font-size: 1.15rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.column {
+  flex: 1 1 220px;
+  max-width: 260px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(20,20,40,0.18);
+  background: #181c2a;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.logo:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(255,106,61,0.25);
+  background: #23263a;
+}
+
+button.modal-btn-content {
+  background: var(--secondary);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(20,20,40,0.18);
+}
+button.modal-btn-content:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(255,106,61,0.25);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(20,20,40,0.85);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: var(--card-bg);
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: var(--shadow);
+  position: relative;
+  color: var(--text);
+}
+.modal-display-topright {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  font-size: 2rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.typed-out {
+  animation: fadeInUp 0.7s ease;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .at-container, .at-common-container, .at-second-render-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-topics h2 {
+    font-size: 1.4rem;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .modal-content {
+    padding: 1rem;
+  }
+}

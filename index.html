@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>John Paul Justice</title>
   <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/modern.css" rel="stylesheet" />
   <script src="script/angular.js"></script>
   <script src="script/jquery-1.12.1.js"></script>
   <script src="app/controllers/main.js"></script>
@@ -13,12 +14,14 @@
 </head>
 
 <body ng-controller="mainController">
-  <div class='at-container'>
-    <div class='at-item'>{{mainName}}</div>
-  </div>
+  <header>
+    <div class="at-item main-header-title">
+      {{mainName}}
+    </div>
+  </header>
 
-  <div class="at-common-container">
-    <div class="at-common-item">
+  <div class="at-second-render-container">
+    <div class="at-second-render-item">
       <div class="main-topics">
         <h2>{{mainTitle}}</h2>
       </div>
@@ -29,7 +32,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Skill set -->
   <div class="at-second-render-container">
@@ -103,33 +105,33 @@
               <header class="modal-container">
                 <span onclick="document.getElementById('jgModal').style.display='none'"
                   class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
+                <div class="fade-in-up">
                   <h2>{{jgName}}</h2>
                 </div>
               </header>
               <div class="modal-container">
-                <div class="typed-out delay-1">
+                <div class="fade-in-up delay-1">
                   <p>{{jgPosition}}</p>
                 </div>
-                <div class="typed-out delay-2">
+                <div class="fade-in-up delay-2">
                   <p>{{jgEmpTime}}</p>
                 </div>
-                <div class="typed-out delay-3">
+                <div class="fade-in-up delay-3">
                   <p>{{jgSummary1}}</p>
                 </div>
-                <div class="typed-out delay-4">
+                <div class="fade-in-up delay-4">
                   <p>{{jgSummary2}}</p>
                 </div>
-                <div class="typed-out delay-5">
+                <div class="fade-in-up delay-5">
                   <p>{{jgSummary3}}</p>
                 </div>
-                <div class="typed-out delay-6">
+                <div class="fade-in-up delay-6">
                   <p>{{jgSummary4}}</p>
                 </div>
-                <div class="typed-out delay-7">
+                <div class="fade-in-up delay-7">
                   <p>{{jgSummary5}}</p>
                 </div>
-                <div class="typed-out delay-8">
+                <div class="fade-in-up delay-8">
                   <p>{{jgSummary6}}</p>
                 </div>
               </div>
@@ -145,24 +147,24 @@
               <header class="modal-container">
                 <span onclick="document.getElementById('nautilusModal').style.display='none'"
                   class="modal-button modal-display-topright">&times;</span>
-                <div class="typed-out">
+                <div class="fade-in-up">
                   <h2>{{nautilusName}}</h2>
                 </div>
               </header>
               <div class="modal-container">
-                <div class="typed-out delay-1">
+                <div class="fade-in-up delay-1">
                   <P>{{nautilusPostition}}</P>
                 </div>
-                <div class="typed-out delay-2">
+                <div class="fade-in-up delay-2">
                   <p>{{nautilusEmpTime}}</p>
                 </div>
-                <div class="typed-out delay-3">
+                <div class="fade-in-up delay-3">
                   <p>{{nautilusSummary1}}</p>
                 </div>
-                <div class="typed-out delay-4">
+                <div class="fade-in-up delay-4">
                   <p>{{nautilusSummary2}}</p>
                 </div>
-                <div class="typed-out delay-5">
+                <div class="fade-in-up delay-5">
                   <p>{{nautilusSummary3}}</p>
                 </div>
               </div>
@@ -177,24 +179,24 @@
               <header class="modal-container">
                 <span onclick="document.getElementById('capsaModal').style.display='none'"
                   class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
+                <div class="fade-in-up">
                   <h2>{{capsaName}}</h2>
                 </div>
               </header>
               <div class="modal-container">
-                <div class="typed-out delay-1">
+                <div class="fade-in-up delay-1">
                   <p>{{capsaTitle}}</p>
                 </div>
-                <div class="typed-out delay-2">
+                <div class="fade-in-up delay-2">
                   <p>{{capsaEmpTime}}</p>
                 </div>
-                <div class="typed-out delay-3">
+                <div class="fade-in-up delay-3">
                   <p>{{capsaSummary1}}</p>
                 </div>
-                <div class="typed-out delay-4">
+                <div class="fade-in-up delay-4">
                   <p>{{capsaSummary2}}</p>
                 </div>
-                <div class="typed-out delay-5">
+                <div class="fade-in-up delay-5">
                   <p>{{capsaSummary3}}</p>
                 </div>
               </div>
@@ -211,24 +213,24 @@
               <header class="modal-container">
                 <span onclick="document.getElementById('integraModal').style.display='none'"
                   class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
+                <div class="fade-in-up">
                   <h2>{{integraName}}</h2>
                 </div>
               </header>
               <div class="modal-container">
-                <div class="typed-out delay-1">
+                <div class="fade-in-up delay-1">
                   <p>{{integraTitle}}</p>
                 </div>
-                <div class="typed-out delay-2">
+                <div class="fade-in-up delay-2">
                   <p>{{integraEmpTime}}</p>
                 </div>
-                <div class="typed-out delay-3">
+                <div class="fade-in-up delay-3">
                   <p>{{integraSummary1}}</p>
                 </div>
-                <div class="typed-out delay-4">
+                <div class="fade-in-up delay-4">
                   <p>{{integraSummary2}}</p>
                 </div>
-                <div class="typed-out delay-5">
+                <div class="fade-in-up delay-5">
                   <p>{{integraSummary3}}</p>
                 </div>
               </div>
@@ -244,24 +246,24 @@
               <header class="modal-container">
                 <span onclick="document.getElementById('engilityModal').style.display='none'"
                   class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
+                <div class="fade-in-up">
                   <h2>{{engilityName}}</h2>
                 </div>
               </header>
               <div class="modal-container">
-                <div class="typed-out delay-1">
+                <div class="fade-in-up delay-1">
                   <p>{{engilityTitle}}</p>
                 </div>
-                <div class="typed-out delay-2">
+                <div class="fade-in-up delay-2">
                   <p>{{engilityEmpTime}}</p>
                 </div>
-                <div class="typed-out delay-3">
+                <div class="fade-in-up delay-3">
                   <p>{{engilitySummary1}}</p>
                 </div>
-                <div class="typed-out delay-4">
+                <div class="fade-in-up delay-4">
                   <p>{{engilitySummary2}}</p>
                 </div>
-                <div class="typed-out delay-5">
+                <div class="fade-in-up delay-5">
                   <p>{{engilitySummary3}}</p>
                 </div>
               </div>
@@ -314,7 +316,7 @@
   <div class="main-background"></div>
   <footer>
     <div class="at-copywrite-item">&copy;
-      <script>document.write(" " + new Date().getFullYear());</script>
+      <script>document.write(" " + new Date().getFullYear());</script> John P. Justice. All rights reserved.
     </div>
   </footer>
 </body>

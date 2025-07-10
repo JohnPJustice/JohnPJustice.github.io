@@ -125,7 +125,7 @@
         labels: ["Testing/Automated Test", "Monitoring/Logging", "Distributed Computing", "Automation/Tooling", "Databases", "Cloud Security", "CICD", "Linux Systems", "AI/ML"],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor:  "green",
+          backgroundColor:  "#ff6a3d",
           data: [11, 8, 8, 11, 11, 11, 11, 9, 5],
         }]
       },
@@ -135,18 +135,32 @@
             labels:{
               font:{
                 family: 'Arial'
-              }
+              },
+              color: '#e0e6f7'
             }
           }
         },
         title: {
           display: true,
-          text: 'DevOps Skill Experience'
+          text: 'DevOps Skill Experience',
+          color: '#e0e6f7'
         },
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              color: '#e0e6f7'
+            },
+            grid: {
+              color: '#23263a'
+            }
+          }],
+          xAxes: [{
+            ticks: {
+              color: '#e0e6f7'
+            },
+            grid: {
+              color: '#23263a'
             }
           }]
         }
@@ -159,7 +173,7 @@
         labels: ["Python", "C#", "Javascript", "GoLang","SQL", "NRQL", "Bash", "Powershell"],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: 'green',
+          backgroundColor: '#9daaf2',
           data: [7, 15, 8, 5, 9, 4, 4, 8]
         }]
       },
@@ -169,18 +183,32 @@
             labels:{
               font:{
                 family: 'consolas'
-              }
+              },
+              color: '#e0e6f7'
             }
           }
         },
         title: {
           display: true,
-          text: 'Code Language Experience'
+          text: 'Code Language Experience',
+          color: '#e0e6f7'
         },
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              color: '#e0e6f7'
+            },
+            grid: {
+              color: '#23263a'
+            }
+          }],
+          xAxes: [{
+            ticks: {
+              color: '#e0e6f7'
+            },
+            grid: {
+              color: '#23263a'
             }
           }]
         }
@@ -192,7 +220,7 @@
         labels: ["AWS", "Azure", "Google", "VMWare", "Kubernetes", "Jenkins", "Terraform", "Docker", "Packer", "Ansible", "Puppet", "Chef"],
         datasets: [{
           label: "Professional Years Experience",
-          backgroundColor: "green",
+          backgroundColor: "#2d3250",
           data: [7, 10, 3, 2, 7, 3,7,8,3,4,4,3],
         }]
       },
@@ -202,18 +230,32 @@
             labels:{
               font:{
                 family: 'consolas'
-              }
+              },
+              color: '#e0e6f7'
             }
           }
         },
         title: {
           display: true,
-          text: 'Cloud Experience'
+          text: 'Cloud Experience',
+          color: '#e0e6f7'
         },
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              color: '#e0e6f7'
+            },
+            grid: {
+              color: '#23263a'
+            }
+          }],
+          xAxes: [{
+            ticks: {
+              color: '#e0e6f7'
+            },
+            grid: {
+              color: '#23263a'
             }
           }]
         }
