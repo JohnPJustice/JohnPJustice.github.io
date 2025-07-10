@@ -25,7 +25,7 @@
     "jgSummary1": "Pioneered a platform that empowers engineers to deploy services seamlessly with zero downtime, equipped with comprehensive monitoring, SLAs, and alerting mechanisms, ensuring optimal service performance and reliability.",
     "jgSummary2": "Oversee the backend services of game studios by developing, testing, launching, maintaining, and monitoring microservices/applications.",
     "jgSummary3": "Constructed and maintained a multi-regional cloud infrastructure that guarantees high availability, effectively accommodating the dynamic needs of the user base and enhancing service resilience.",
-    "jgSummary4": "Applied AI techniques like prompt engineering and RAG to build an efficient AI Chat Agent providing accurate and reliable information extracted and indexed from proprietary company data.",
+    "jgSummary4": "Applied AI techniques like prompt engineering, Model Context Protocol, and RAG to build an efficient AI Chat Agent providing accurate and reliable information extracted and indexed from proprietary company data.",
     "jgSummary5": "Developed an automated system for GitHub Pull Requests, improving team productivity and code quality.",
     "jgSummary6": "Executed continuous integration and delivery of new microservices/applications and resolved large-scale deployment issues on Linux and Windows systems within a Kubernetes environment.",
     "capsaName": "Capsa Healthcare",
