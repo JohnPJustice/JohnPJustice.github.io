@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>John Paul Justice</title>
   <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/modern.css" rel="stylesheet" />
   <script src="script/angular.js"></script>
   <script src="script/jquery-1.12.1.js"></script>
   <script src="app/controllers/main.js"></script>
@@ -13,258 +14,90 @@
 </head>
 
 <body ng-controller="mainController">
-  <div class='at-container'>
-    <div class='at-item'>{{mainName}}</div>
-  </div>
+  <header>
+    <div class="portfolio-header-container">
+      {{mainName}}
+    </div>
+  </header>
 
-  <div class="at-common-container">
-    <div class="at-common-item">
-      <div class="main-topics">
-        <h2>{{mainTitle}}</h2>
+  <!-- Main Content -->
+  <div class="main-content-section">
+    <div class="portfolio-card">
+      <div class="portfolio-card-header">
+        <h2 class="portfolio-section-title">{{mainTitle}}</h2>
       </div>
-      <div class="row">
-        <div class="summary">
-          <p>{{mainSummary}}</p>
-        </div>
+      <div class="portfolio-summary">
+        <p>{{mainSummary}}</p>
       </div>
     </div>
   </div>
-
 
   <!-- Skill set -->
-  <div class="at-second-render-container">
-    <div class="at-second-render-item">
-      <div class="main-topics">
-        <h2>{{skillSet}}</h2>
+  <div class="skills-content-section">
+    <div class="portfolio-card">
+      <div class="portfolio-card-header">
+        <h2 class="portfolio-section-title">{{skillSet}}</h2>
       </div>
-      <div class="row">
-        <div class="column">
-          <button type="button" onclick="document.getElementById('devopsModal').style.display='block'"
-            class="modal-btn-content"><img class="logo" src="./images/DevopsSkills.png" alt="Devops Skills"></button>
-          <div id="devopsModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('devopsModal').style.display='none'"
-                  class=" modal-display-topright">&times;</span>
-              </header>
-              <div class="modal-container">
-                <canvas id="devopsChart" class="chartjs-render-monitor"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <button type="button" onclick="document.getElementById('codingModal').style.display='block'"
-            class="modal-btn-content"><img class="logo" src="./images/CodingSkills.png" alt="Coding Skills"></button>
-          <div id="codingModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('codingModal').style.display='none'"
-                  class="modal-button modal-display-topright">&times;</span>
-              </header>
-              <div class="modal-container">
-                <canvas id="codingChart" class="chartjs-render-monitor"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <button type="button" onclick="document.getElementById('cloudModal').style.display='block'"
-            class="modal-btn-content"><img class="logo" src="./images/CloudSkills.png" alt="Cloud Skills"></button>
-          <div id="cloudModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('cloudModal').style.display='none'"
-                  class=" modal-display-topright">&times;</span>
-              </header>
-              <div class="modal-container">
-                <canvas id="cloudChart" class="chartjs-render-monitor"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="skills-grid-container skills-grid-three-columns">
+        <button type="button" onclick="document.getElementById('devopsModal').style.display='block'"
+          class="skills-action-button">
+          <img class="skills-category-icon" src="./images/DevopsSkills.png" alt="DevOps Skills">
+          <span class="skill-button-label">DevOps Skills</span>
+        </button>
+        
+        <button type="button" onclick="document.getElementById('codingModal').style.display='block'"
+          class="skills-action-button">
+          <img class="skills-category-icon" src="./images/CodingSkills.png" alt="Coding Skills">
+          <span class="skill-button-label">Coding Skills</span>
+        </button>
+        
+        <button type="button" onclick="document.getElementById('cloudModal').style.display='block'"
+          class="skills-action-button">
+          <img class="skills-category-icon" src="./images/CloudSkills.png" alt="Cloud Skills">
+          <span class="skill-button-label">Cloud Skills</span>
+        </button>
       </div>
-    </div>
-  </div>
 
-
-  <div class="at-second-render-container">
-    <div class="at-second-render-item">
-      <div class="main-topics">
-        <h2>{{mainExperience}}</h2>
+      <!-- DevOps Modal -->
+      <div id="devopsModal" class="skills-modal">
+        <div class="skills-modal-content">
+          <div class="skills-modal-header">
+            <h3 class="skills-modal-title">DevOps Skills</h3>
+            <button onclick="document.getElementById('devopsModal').style.display='none'" class="skills-modal-close">&times;</button>
+          </div>
+          <div class="skills-modal-body">
+            <div class="skills-chart-container">
+              <canvas id="devopsChart" class="chartjs-render-monitor"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="column">
-          <button type="button" onclick="document.getElementById('jgModal').style.display='block '"
-            class="modal-btn-content"><img class="logo" src="./images/workHistory/jg.png" alt="JG"></button>
-          <div id="jgModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('jgModal').style.display='none'"
-                  class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
-                  <h2>{{jgName}}</h2>
-                </div>
-              </header>
-              <div class="modal-container">
-                <div class="typed-out delay-1">
-                  <p>{{jgPosition}}</p>
-                </div>
-                <div class="typed-out delay-2">
-                  <p>{{jgEmpTime}}</p>
-                </div>
-                <div class="typed-out delay-3">
-                  <p>{{jgSummary1}}</p>
-                </div>
-                <div class="typed-out delay-4">
-                  <p>{{jgSummary2}}</p>
-                </div>
-                <div class="typed-out delay-5">
-                  <p>{{jgSummary3}}</p>
-                </div>
-                <div class="typed-out delay-6">
-                  <p>{{jgSummary4}}</p>
-                </div>
-                <div class="typed-out delay-7">
-                  <p>{{jgSummary5}}</p>
-                </div>
-                <div class="typed-out delay-8">
-                  <p>{{jgSummary6}}</p>
-                </div>
-              </div>
+
+      <!-- Coding Modal -->
+      <div id="codingModal" class="skills-modal">
+        <div class="skills-modal-content">
+          <div class="skills-modal-header">
+            <h3 class="skills-modal-title">Coding Skills</h3>
+            <button onclick="document.getElementById('codingModal').style.display='none'" class="skills-modal-close">&times;</button>
+          </div>
+          <div class="skills-modal-body">
+            <div class="skills-chart-container">
+              <canvas id="codingChart" class="chartjs-render-monitor"></canvas>
             </div>
           </div>
         </div>
-        <div class="column">
-          <button type="button" onclick="document.getElementById('nautilusModal').style.display='block'"
-            class="modal-btn-content"><img class="logo" src="./images/workHistory/nautilusBrandinc.png"
-              alt="Nautilus"></button>
-          <div id="nautilusModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('nautilusModal').style.display='none'"
-                  class="modal-button modal-display-topright">&times;</span>
-                <div class="typed-out">
-                  <h2>{{nautilusName}}</h2>
-                </div>
-              </header>
-              <div class="modal-container">
-                <div class="typed-out delay-1">
-                  <P>{{nautilusPostition}}</P>
-                </div>
-                <div class="typed-out delay-2">
-                  <p>{{nautilusEmpTime}}</p>
-                </div>
-                <div class="typed-out delay-3">
-                  <p>{{nautilusSummary1}}</p>
-                </div>
-                <div class="typed-out delay-4">
-                  <p>{{nautilusSummary2}}</p>
-                </div>
-                <div class="typed-out delay-5">
-                  <p>{{nautilusSummary3}}</p>
-                </div>
-              </div>
-            </div>
+      </div>
+
+      <!-- Cloud Modal -->
+      <div id="cloudModal" class="skills-modal">
+        <div class="skills-modal-content">
+          <div class="skills-modal-header">
+            <h3 class="skills-modal-title">Cloud Skills</h3>
+            <button onclick="document.getElementById('cloudModal').style.display='none'" class="skills-modal-close">&times;</button>
           </div>
-        </div>
-        <div class="column">
-          <button type="button" onclick="document.getElementById('capsaModal').style.display='block'"
-            class="modal-btn-content"><img class="logo" src="./images/workHistory/capsaBrand.png" alt="Capsa"></button>
-          <div id="capsaModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('capsaModal').style.display='none'"
-                  class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
-                  <h2>{{capsaName}}</h2>
-                </div>
-              </header>
-              <div class="modal-container">
-                <div class="typed-out delay-1">
-                  <p>{{capsaTitle}}</p>
-                </div>
-                <div class="typed-out delay-2">
-                  <p>{{capsaEmpTime}}</p>
-                </div>
-                <div class="typed-out delay-3">
-                  <p>{{capsaSummary1}}</p>
-                </div>
-                <div class="typed-out delay-4">
-                  <p>{{capsaSummary2}}</p>
-                </div>
-                <div class="typed-out delay-5">
-                  <p>{{capsaSummary3}}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <button type="button" onclick="document.getElementById('integraModal').style.display='block'"
-            class="modal-btn-content">
-            <img class="logo" src="./images/workHistory/Integra.png" alt="Integra">
-          </button>
-          <div id="integraModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('integraModal').style.display='none'"
-                  class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
-                  <h2>{{integraName}}</h2>
-                </div>
-              </header>
-              <div class="modal-container">
-                <div class="typed-out delay-1">
-                  <p>{{integraTitle}}</p>
-                </div>
-                <div class="typed-out delay-2">
-                  <p>{{integraEmpTime}}</p>
-                </div>
-                <div class="typed-out delay-3">
-                  <p>{{integraSummary1}}</p>
-                </div>
-                <div class="typed-out delay-4">
-                  <p>{{integraSummary2}}</p>
-                </div>
-                <div class="typed-out delay-5">
-                  <p>{{integraSummary3}}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <button type="button" onclick="document.getElementById('engilityModal').style.display='block'"
-            class="modal-btn-content"><img class="logo" src="./images/workHistory/engilitybrand.png"
-              alt="Engility"></button>
-          <div id="engilityModal" class="modal">
-            <div class="modal-content modal-card-4">
-              <header class="modal-container">
-                <span onclick="document.getElementById('engilityModal').style.display='none'"
-                  class=" modal-display-topright">&times;</span>
-                <div class="typed-out">
-                  <h2>{{engilityName}}</h2>
-                </div>
-              </header>
-              <div class="modal-container">
-                <div class="typed-out delay-1">
-                  <p>{{engilityTitle}}</p>
-                </div>
-                <div class="typed-out delay-2">
-                  <p>{{engilityEmpTime}}</p>
-                </div>
-                <div class="typed-out delay-3">
-                  <p>{{engilitySummary1}}</p>
-                </div>
-                <div class="typed-out delay-4">
-                  <p>{{engilitySummary2}}</p>
-                </div>
-                <div class="typed-out delay-5">
-                  <p>{{engilitySummary3}}</p>
-                </div>
-              </div>
+          <div class="skills-modal-body">
+            <div class="skills-chart-container">
+              <canvas id="cloudChart" class="chartjs-render-monitor"></canvas>
             </div>
           </div>
         </div>
@@ -272,49 +105,223 @@
     </div>
   </div>
 
-  <div class="at-second-render-container">
-    <div class="at-second-render-item">
-      <div class="main-topics">
-        <h2>{{navContact}}</h2>
+  <!-- Experience Section -->
+  <div class="experience-content-section">
+    <div class="portfolio-card">
+      <div class="portfolio-card-header">
+        <h2 class="portfolio-section-title">{{mainExperience}}</h2>
       </div>
-      <div class="row">
-        <div class="column">
-          <div class="contact-content">
-            <a class="logo" href="https://www.linkedin.com/in/john-paul-justice/" download>
-              <img height="75" width="75" src="images/LinkedIn-Logo.png" alt="LinkedIn">
-            </a>
+      <div class="experience-grid-container experience-grid-five-columns">
+        <button type="button" onclick="document.getElementById('jgModal').style.display='block'"
+          class="experience-company-button">
+          <img class="experience-company-icon" src="./images/workHistory/jg.png" alt="JG">
+          <span class="experience-button-label">JG</span>
+        </button>
+        
+        <button type="button" onclick="document.getElementById('nautilusModal').style.display='block'"
+          class="experience-company-button">
+          <img class="experience-company-icon" src="./images/workHistory/nautilusBrandinc.png" alt="Nautilus">
+          <span class="experience-button-label">Nautilus</span>
+        </button>
+        
+        <button type="button" onclick="document.getElementById('capsaModal').style.display='block'"
+          class="experience-company-button">
+          <img class="experience-company-icon" src="./images/workHistory/capsaBrand.png" alt="Capsa">
+          <span class="experience-button-label">Capsa</span>
+        </button>
+        
+        <button type="button" onclick="document.getElementById('integraModal').style.display='block'"
+          class="experience-company-button">
+          <img class="experience-company-icon" src="./images/workHistory/Integra.png" alt="Integra">
+          <span class="experience-button-label">Integra</span>
+        </button>
+        
+        <button type="button" onclick="document.getElementById('engilityModal').style.display='block'"
+          class="experience-company-button">
+          <img class="experience-company-icon" src="./images/workHistory/engilitybrand.png" alt="Engility">
+          <span class="experience-button-label">Engility</span>
+        </button>
+      </div>
+
+      <!-- JG Modal -->
+      <div id="jgModal" class="experience-modal">
+        <div class="experience-modal-content">
+          <div class="experience-modal-header">
+            <h3 class="experience-modal-title">{{jgName}}</h3>
+            <button onclick="document.getElementById('jgModal').style.display='none'" class="experience-modal-close">&times;</button>
+          </div>
+          <div class="experience-modal-body">
+            <div class="experience-details-container">
+              <div class="experience-detail-item">
+                <h4>Position</h4>
+                <p>{{jgPosition}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Employment Period</h4>
+                <p>{{jgEmpTime}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Experience Summary</h4>
+                <p>{{jgSummary1}}</p>
+                <p>{{jgSummary2}}</p>
+                <p>{{jgSummary3}}</p>
+                <p>{{jgSummary4}}</p>
+                <p>{{jgSummary5}}</p>
+                <p>{{jgSummary6}}</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="contact-content">
-            <a class="logo" href="https://github.com/JohnPJustice" download>
-              <img height="75" width="75" src="images/github.png" alt="Github">
-            </a>
+      </div>
+
+      <!-- Nautilus Modal -->
+      <div id="nautilusModal" class="experience-modal">
+        <div class="experience-modal-content">
+          <div class="experience-modal-header">
+            <h3 class="experience-modal-title">{{nautilusName}}</h3>
+            <button onclick="document.getElementById('nautilusModal').style.display='none'" class="experience-modal-close">&times;</button>
+          </div>
+          <div class="experience-modal-body">
+            <div class="experience-details-container">
+              <div class="experience-detail-item">
+                <h4>Position</h4>
+                <p>{{nautilusPostition}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Employment Period</h4>
+                <p>{{nautilusEmpTime}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Experience Summary</h4>
+                <p>{{nautilusSummary1}}</p>
+                <p>{{nautilusSummary2}}</p>
+                <p>{{nautilusSummary3}}</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="contact-content">
-            <a class="logo" href="https://johnpjustice.github.io/docs/Resume.pdf" download>
-              <img height="75" width="75" src="images/downloadIcon.png" alt="Download Resume">
-            </a>
+      </div>
+
+      <!-- Capsa Modal -->
+      <div id="capsaModal" class="experience-modal">
+        <div class="experience-modal-content">
+          <div class="experience-modal-header">
+            <h3 class="experience-modal-title">{{capsaName}}</h3>
+            <button onclick="document.getElementById('capsaModal').style.display='none'" class="experience-modal-close">&times;</button>
+          </div>
+          <div class="experience-modal-body">
+            <div class="experience-details-container">
+              <div class="experience-detail-item">
+                <h4>Position</h4>
+                <p>{{capsaTitle}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Employment Period</h4>
+                <p>{{capsaEmpTime}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Experience Summary</h4>
+                <p>{{capsaSummary1}}</p>
+                <p>{{capsaSummary2}}</p>
+                <p>{{capsaSummary3}}</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="contact-content">
-            <a class="logo" href="https://www.codewars.com/users/jpjustice" download>
-              <img height="75" width="75" src="images/codeWarsLogo.png" alt="Codewars">
-            </a>
+      </div>
+
+      <!-- Integra Modal -->
+      <div id="integraModal" class="experience-modal">
+        <div class="experience-modal-content">
+          <div class="experience-modal-header">
+            <h3 class="experience-modal-title">{{integraName}}</h3>
+            <button onclick="document.getElementById('integraModal').style.display='none'" class="experience-modal-close">&times;</button>
+          </div>
+          <div class="experience-modal-body">
+            <div class="experience-details-container">
+              <div class="experience-detail-item">
+                <h4>Position</h4>
+                <p>{{integraTitle}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Employment Period</h4>
+                <p>{{integraEmpTime}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Experience Summary</h4>
+                <p>{{integraSummary1}}</p>
+                <p>{{integraSummary2}}</p>
+                <p>{{integraSummary3}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engility Modal -->
+      <div id="engilityModal" class="experience-modal">
+        <div class="experience-modal-content">
+          <div class="experience-modal-header">
+            <h3 class="experience-modal-title">{{engilityName}}</h3>
+            <button onclick="document.getElementById('engilityModal').style.display='none'" class="experience-modal-close">&times;</button>
+          </div>
+          <div class="experience-modal-body">
+            <div class="experience-details-container">
+              <div class="experience-detail-item">
+                <h4>Position</h4>
+                <p>{{engilityTitle}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Employment Period</h4>
+                <p>{{engilityEmpTime}}</p>
+              </div>
+              <div class="experience-detail-item">
+                <h4>Experience Summary</h4>
+                <p>{{engilitySummary1}}</p>
+                <p>{{engilitySummary2}}</p>
+                <p>{{engilitySummary3}}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="contact-content-section">
+    <div class="portfolio-card">
+      <div class="portfolio-card-header">
+        <h2 class="portfolio-section-title">{{navContact}}</h2>
+      </div>
+      <div class="contact-grid-container contact-grid-four-columns">
+        <a href="https://www.linkedin.com/in/john-paul-justice/" target="_blank" rel="noopener" class="contact-link-button">
+          <img class="contact-platform-icon" src="images/LinkedIn-Logo.png" alt="LinkedIn">
+          <span class="contact-button-label">LinkedIn</span>
+        </a>
+        
+        <a href="https://github.com/JohnPJustice" target="_blank" rel="noopener" class="contact-link-button">
+          <img class="contact-platform-icon" src="images/github.png" alt="GitHub">
+          <span class="contact-button-label">GitHub</span>
+        </a>
+        
+        <a href="https://johnpjustice.github.io/docs/Resume.pdf" download class="contact-link-button">
+          <img class="contact-platform-icon" src="images/downloadIcon.png" alt="Download Resume">
+          <span class="contact-button-label">Resume</span>
+        </a>
+        
+        <a href="https://www.codewars.com/users/jpjustice" target="_blank" rel="noopener" class="contact-link-button">
+          <img class="contact-platform-icon" src="images/codeWarsLogo.png" alt="CodeWars">
+          <span class="contact-button-label">CodeWars</span>
+        </a>
+      </div>
+    </div>
+  </div>
   </div>
 
-  <div class="main-background"></div>
+  <div class="portfolio-background"></div>
   <footer>
-    <div class="at-copywrite-item">&copy;
-      <script>document.write(" " + new Date().getFullYear());</script>
+    <div class="portfolio-copyright-notice">&copy;
+      <script>document.write(" " + new Date().getFullYear());</script> John P. Justice. All rights reserved.
     </div>
   </footer>
 </body>
