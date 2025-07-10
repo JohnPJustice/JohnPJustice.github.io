@@ -1,68 +1,95 @@
 ﻿(function () {
   var jpjapp = angular.module("app", ["ngRoute"]);
-  jpjapp.controller("mainController", function ($scope) {
-    var url="https://johnpjustice.github.io/data.json";
-    var jsonInfo = {};
-    $.ajax({
-      url: url,
-      async: false,
-      dataType: 'json',
-      type:"GET",
-      success: function (data) {
-        jsonInfo = data;
-      }
-    });
+  jpjapp.controller("mainController", function ($scope, $http) {
+    // Try multiple URL formats, starting with local file
+    var gistUrls = [
+      "https://gist.githubusercontent.com/JohnPJustice/f33a5916989bbc0639335e4319d0977f/raw"
+    ];
     
-    $scope.mainName = angular.uppercase(jsonInfo.mainName);
-    $scope.mainNameTitle = jsonInfo.mainName;
-    $scope.navAbout = jsonInfo.navAbout;
-    $scope.navContact = jsonInfo.navContact;
-    $scope.navProjects = jsonInfo.navProjects;
-    $scope.navTitle = jsonInfo.navTitle;
-    $scope.aboutMe = jsonInfo.aboutMe;
-    $scope.photoOfMe = jsonInfo.photoOfMe;
-    $scope.mainTitle = jsonInfo.mainTitle;
-    $scope.mainSummary = jsonInfo.mainSummary;
-    $scope.mainContactMe = jsonInfo.mainContactMe;
-    $scope.mainExperience = jsonInfo.mainExperience;
-    $scope.nautilusName = jsonInfo.nautilusName;
-    $scope.nautilusPostition = jsonInfo.nautilusPostition;
-    $scope.nautilusEmpTime = jsonInfo.nautilusEmpTime;
-    $scope.jgName = jsonInfo.jgName;
-    $scope.jgPosition = jsonInfo.jgPosition;
-    $scope.jgEmpTime = jsonInfo.jgEmpTime;
-    $scope.capsaEmpTime = jsonInfo.capsaEmpTime;
-    $scope.integraEmpTime = jsonInfo.integraEmpTime;
-    $scope.engilityEmpTime = jsonInfo.engilityEmpTime;
-    $scope.nautilusSummary1 = jsonInfo.nautilusSummary1;
-    $scope.nautilusSummary2 = jsonInfo.nautilusSummary2;
-    $scope.nautilusSummary3 = jsonInfo.nautilusSummary3;
-    $scope.jgSummary1 = jsonInfo.jgSummary1;
-    $scope.jgSummary2 = jsonInfo.jgSummary2;
-    $scope.jgSummary3 = jsonInfo.jgSummary3;
-    $scope.jgSummary4 = jsonInfo.jgSummary4;
-    $scope.jgSummary5 = jsonInfo.jgSummary5;
-    $scope.jgSummary6 = jsonInfo.jgSummary6;
-    $scope.capsaName = jsonInfo.capsaName;
-    $scope.capsaTitle = jsonInfo.capsaTitle;
-    $scope.capsaSummary1 = jsonInfo.capsaSummary1;
-    $scope.capsaSummary2 = jsonInfo.capsaSummary2;
-    $scope.capsaSummary3 = jsonInfo.capsaSummary3;
-    $scope.integraName = jsonInfo.integraName;
-    $scope.integraTitle = jsonInfo.integraTitle;
-    $scope.integraSummary1 = jsonInfo.integraSummary1;
-    $scope.integraSummary2 = jsonInfo.integraSummary2;
-    $scope.integraSummary3 = jsonInfo.integraSummary3;
-    $scope.engilityName = jsonInfo.engilityName;
-    $scope.engilityTitle = jsonInfo.engilityTitle;
-    $scope.engilitySummary1 = jsonInfo.engilitySummary1;
-    $scope.engilitySummary2 = jsonInfo.engilitySummary2;
-    $scope.engilitySummary3 = jsonInfo.engilitySummary3;
-    $scope.githubLink = jsonInfo.githubLink;
-    $scope.githubTitle = jsonInfo.githubTitle;
-    $scope.linkedInLink = jsonInfo.linkedInLink;
-    $scope.linkedInTitle = jsonInfo.linkedInTitle;
-    $scope.skillSet = jsonInfo.skillSet;
+    var jsonInfo = {};
+        
+    // Function to try each URL until one works
+    function tryFetchData(urlIndex) {
+      if (urlIndex >= gistUrls.length) {
+        console.error('All data sources failed, using default values');
+        setDefaultValues();
+        return;
+      }
+      
+      var url = gistUrls[urlIndex];
+      
+      $http.get(url)
+        .then(function(response) {
+          jsonInfo = response.data;
+          setDataValues(jsonInfo);
+        })
+        .catch(function(error) {
+          console.log('Failed to load from:', url, error);
+          tryFetchData(urlIndex + 1);
+        });
+    }
+    
+    // Function to set data values
+    function setDataValues(data) {
+      $scope.mainName = angular.uppercase(data.mainName || 'JOHN P. JUSTICE');
+      $scope.mainNameTitle = data.mainName || 'John P. Justice';
+      $scope.navAbout = data.navAbout || 'About';
+      $scope.navContact = data.navContact || 'Contact';
+      $scope.navProjects = data.navProjects || 'Projects';
+      $scope.navTitle = data.navTitle || 'Portfolio';
+      $scope.aboutMe = data.aboutMe || '';
+      $scope.photoOfMe = data.photoOfMe || '';
+      $scope.mainTitle = data.mainTitle || 'Software Engineer & DevOps Specialist';
+      $scope.mainSummary = data.mainSummary || 'Experienced software engineer and DevOps specialist with expertise in cloud technologies, automation, and full-stack development.';
+      $scope.mainContactMe = data.mainContactMe || 'Contact Me';
+      $scope.mainExperience = data.mainExperience || 'Professional Experience';
+      $scope.nautilusName = data.nautilusName || 'Nautilus';
+      $scope.nautilusPostition = data.nautilusPostition || 'Software Engineer';
+      $scope.nautilusEmpTime = data.nautilusEmpTime || '2020-2022';
+      $scope.jgName = data.jgName || 'JG';
+      $scope.jgPosition = data.jgPosition || 'Senior Software Engineer';
+      $scope.jgEmpTime = data.jgEmpTime || '2022-Present';
+      $scope.capsaEmpTime = data.capsaEmpTime || '2018-2020';
+      $scope.integraEmpTime = data.integraEmpTime || '2016-2018';
+      $scope.engilityEmpTime = data.engilityEmpTime || '2014-2016';
+      $scope.nautilusSummary1 = data.nautilusSummary1 || 'Software development and engineering';
+      $scope.nautilusSummary2 = data.nautilusSummary2 || 'Cloud infrastructure management';
+      $scope.nautilusSummary3 = data.nautilusSummary3 || 'DevOps automation';
+      $scope.jgSummary1 = data.jgSummary1 || 'Lead software development projects';
+      $scope.jgSummary2 = data.jgSummary2 || 'Architect cloud solutions';
+      $scope.jgSummary3 = data.jgSummary3 || 'Implement CI/CD pipelines';
+      $scope.jgSummary4 = data.jgSummary4 || 'Mentor junior developers';
+      $scope.jgSummary5 = data.jgSummary5 || 'Optimize system performance';
+      $scope.jgSummary6 = data.jgSummary6 || 'Ensure security best practices';
+      $scope.capsaName = data.capsaName || 'Capsa';
+      $scope.capsaTitle = data.capsaTitle || 'Software Engineer';
+      $scope.capsaSummary1 = data.capsaSummary1 || 'Full-stack development';
+      $scope.capsaSummary2 = data.capsaSummary2 || 'Database optimization';
+      $scope.capsaSummary3 = data.capsaSummary3 || 'API development';
+      $scope.integraName = data.integraName || 'Integra';
+      $scope.integraTitle = data.integraTitle || 'Software Developer';
+      $scope.integraSummary1 = data.integraSummary1 || 'Web application development';
+      $scope.integraSummary2 = data.integraSummary2 || 'System integration';
+      $scope.integraSummary3 = data.integraSummary3 || 'Quality assurance';
+      $scope.engilityName = data.engilityName || 'Engility';
+      $scope.engilityTitle = data.engilityTitle || 'Junior Developer';
+      $scope.engilitySummary1 = data.engilitySummary1 || 'Software maintenance';
+      $scope.engilitySummary2 = data.engilitySummary2 || 'Bug fixes and enhancements';
+      $scope.engilitySummary3 = data.engilitySummary3 || 'Documentation';
+      $scope.githubLink = data.githubLink || 'https://github.com/JohnPJustice';
+      $scope.githubTitle = data.githubTitle || 'GitHub';
+      $scope.linkedInLink = data.linkedInLink || 'https://www.linkedin.com/in/john-paul-justice/';
+      $scope.linkedInTitle = data.linkedInTitle || 'LinkedIn';
+      $scope.skillSet = data.skillSet || 'Technical Skills';
+    }
+    
+    // Function to set default values
+    function setDefaultValues() {
+      setDataValues({});
+    }
+    
+    // Start the data fetching process
+    tryFetchData(0);
 
     // // Get list of collapsible elements
     // var colls = document.getElementsByClassName("collapsible");
@@ -91,12 +118,16 @@
     //   });
     // }
 
-    // Get list of modal elements
-    var modals = document.getElementsByClassName("modal");
+    // Get list of modal elements with updated class names
+    var modals = document.getElementsByClassName("skills-modal");
+    var experienceModals = document.getElementsByClassName("experience-modal");
+    
+    // Combine all modals into one array
+    var allModals = [].slice.call(modals).concat([].slice.call(experienceModals));
+    
     // When the user clicks anywhere outside of the modal, close it 
-
     window.onclick = function(event) {
-      for (var modal of modals) {
+      for (var modal of allModals) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
